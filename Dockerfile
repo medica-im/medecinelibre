@@ -1,15 +1,18 @@
-FROM node:16-alpine AS build
+FROM node:18-alpine AS build
 
 WORKDIR /app
+COPY package*.json .
+RUN npm ci
 COPY . .
-RUN npm ci
 RUN npm run build --verbose
+RUN npm prune --production
 
-FROM node:16-alpine AS deploy-node
+FROM node:18-alpine
 
 WORKDIR /app
-RUN rm -rf ./*
-COPY --from=build /app/package*.json ./
-COPY --from=build /app/build .
-RUN npm ci
-CMD ["node", "index.js"]
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY package.json .
+EXPOSE 3000
+ENV NODE_ENV=production
+CMD ["node", "build"]
