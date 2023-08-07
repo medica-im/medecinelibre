@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_SITE_TITLE } from '$env/static/public';
-	import { page } from '$app/stores';
+    import { env } from '$env/dynamic/public';	import { page } from '$app/stores';
 	import WebsiteGraph from '$lib/components/WebsiteGraph/WebsiteGraph.svelte';
 	import { Avatar, CodeBlock } from '@skeletonlabs/skeleton';
 	import homepage1Src from '$lib/assets/images/homepage1.png';
@@ -8,7 +7,7 @@
 
 <svelte:head>
 	<title
-		>Maison de santé, centre de santé, cabinet de groupe - {PUBLIC_SITE_TITLE}</title
+		>Maison de santé, centre de santé, cabinet de groupe - {env.PUBLIC_SITE_TITLE}</title
 	>
 </svelte:head>
 <div>
