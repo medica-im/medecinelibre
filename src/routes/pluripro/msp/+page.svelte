@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PUBLIC_SITE_TITLE } from '$env/static/public';
 	import { page } from '$app/stores';
 	import WebsiteGraph from '$lib/components/WebsiteGraph/WebsiteGraph.svelte';
 	import { Avatar, CodeBlock } from '@skeletonlabs/skeleton';
@@ -7,7 +8,7 @@
 
 <svelte:head>
 	<title
-		>Maison de santé, centre de santé, cabinet de groupe - {import.meta.env.VITE_SITE_TITLE}</title
+		>Maison de santé, centre de santé, cabinet de groupe - {PUBLIC_SITE_TITLE}</title
 	>
 </svelte:head>
 <div>
