@@ -5,6 +5,7 @@ COPY package*.json .
 RUN npm ci
 COPY . .
 RUN npm run build --verbose
+RUN npm run sync --verbose
 RUN npm prune --production
 
 FROM node:18-alpine

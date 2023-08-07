@@ -7,8 +7,6 @@
 	import { drag } from 'd3-drag';
 	import { forceSimulation, forceLink, forceManyBody, forceCenter, forceCollide } from 'd3-force';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
-	import data from './data.js';
-
 
 	let tooltip = false;
 	let tooltipEvent;
@@ -32,7 +30,23 @@
 		forceCollide
 	};
 
-	let graph=data;
+	let graph={
+    "nodes": [
+        { "id": "website", "label": "Site", "title": "Site web", "icon": 0xf0ac, "size": 200, "group": 1, "tooltip": "test" },
+        { "id": "members", "label": "Membres", "title": "Membres de l'équipe soignante", "icon": 0xf7f2, "size": 100, "group": 2, "tooltip": "test" },
+        { "id": "regional_health_agency", "label": "ARS", "icon": 0xf508, "size": 100, "group": 2, "tooltip": "test" },
+        { "id": "health_insurance_fund", "label": "CPAM", "icon": 0xf153, "size": 100, "group": 2, "tooltip": "test" },
+        { "id": "people", "label": "Usagers", "icon": 0xf0c0, "size": 100, "group": 2, "tooltip": "test" },
+        { "id": "health_professional", "label": "PDS", "title": "Professionnels de santé", "icon": 0xf0f0, "size": 100, "group": 2, "tooltip": "test" }
+    ],
+    "links": [
+        { "source": "website", "target": "members", "value": 1 },
+        { "source": "website", "target": "regional_health_agency", "value": 1 },
+        { "source": "website", "target": "health_insurance_fund", "value": 1 },
+        { "source": "website", "target": "people", "value": 1 },
+        { "source": "website", "target": "health_professional", "value": 1 }
+    ]
+};
 
 	let canvas;
 	let width = 356;
@@ -287,19 +301,6 @@
 	<h2 class="h2">Un site web, plusieurs publics</h2>
 	<div class="flex flex-wrap justify-start w-fit gap-2 border-0">
 		<div on:resize={resize} class="graphContainer mx-auto w-fit">
-			<!--{#if activeNode}
-			<breadcrumb id="nodeDetails" class="text-token">
-				<strong>{activeNode.id.split(/(?=[A-Z])/).join(' ')}</strong>
-				<br />
-				{#if activeNode.details}
-					{#each Object.entries(activeNode.details) as detail}
-						{detail[0]}:
-						{detail[1]}
-						<br />
-					{/each}
-				{/if}
-			</breadcrumb>
-		{/if}-->
 			<canvas use:fitToContainer bind:this={canvas} class="border-0" />
 		</div>
 
