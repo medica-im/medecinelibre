@@ -61,6 +61,30 @@
 					</div>
 				</div>
 	</section>
+	<section class="bg-surface-100-800-token">
+		<div class="section-container mx-auto flex justify-center p-2">
+			<div class="grid grid-col-1 gap-4">	
+			<h2 class="h2 text-center">Ils nous font confiance</h2>
+			<nav class="list-nav">
+				<ul>
+					<li>
+						<a href="https://msp-vedene.fr">
+							<span class="badge">🌐</span>
+							<span class="flex-auto anchor">La MSP de Vedène</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://saint-esprit-sante.fr">
+							<span class="badge">🌐</span>
+							<span class="flex-auto anchor">La MSP Saint-Esprit Santé à Bayonne</span>
+						</a>
+					</li>
+					<!-- ... -->
+				</ul>
+			</nav>
+		</div>
+	    </div>
+	</section>
 </div>
 
 <style lang="postcss">
@@ -73,5 +97,8 @@
 		background-image:
 			radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.33) 0px, transparent 50%),
 			radial-gradient(at 98% 1%, rgba(var(--color-error-500) / 0.33) 0px, transparent 50%);
+	}
+	.anchor {
+		@apply underline underline-offset-4;
 	}
 </style>
