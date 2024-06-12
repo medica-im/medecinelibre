@@ -15,7 +15,7 @@
 		<div class="section-container">
 			<div class="container mx-auto flex justify-center p-2">
 				<div class="space-y-10 text-center flex flex-col items-center">
-					<h1 class="h1">Maison de santé, centre de santé, cabinet de groupe</h1>
+					<h1 class="h1">Maison de santé pluriprofessionnelle, centre de santé, cabinet de groupe</h1>
 				</div>
 			</div>
 		</div>
@@ -45,8 +45,7 @@
 							<h3 class="h3 text-center">Site web de démonstration</h3>
 								<p class="text-center">
 									Mieux que de longs discours, cliquez sur le bouton ci-dessous pour tester Pluripro
-									Web MSP! Vous pourrez parcourir le site web de démonstration de la maison de santé
-									fictive de Saint-Saturnin.
+									Web MSP! Vous pourrez parcourir le site web de démonstration de la maison de santé pluriprofessionnelle fictive de Saint-Saturnin.
 								</p>
 								
 						
