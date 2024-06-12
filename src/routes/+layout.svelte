@@ -48,6 +48,7 @@ import { storePopup } from '@skeletonlabs/skeleton';
 		if (pageUrlPath === '/') return true;
 		// If contact route
 		if (pageUrlPath === '/contact') return true;
+		if (pageUrlPath === '/mentions-legales') return true;
 		// If any blog route
 		if (pageUrlPath.includes('/blog')) return true;
 		return false;

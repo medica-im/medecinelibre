@@ -20,6 +20,7 @@
 		faMastodon
 	} from '@fortawesome/free-brands-svg-icons';
 	import {
+		faScaleBalanced,
 		faCircleNodes,
 		faBars,
 		faCaretDown,
@@ -187,6 +188,12 @@
 							<a href="/contact">
 								<span class="w-6 text-center"><Fa icon={faEnvelope} /></span>
 								<span>Contact</span>
+							</a>
+						</li>
+						<li>
+							<a href="/mentions-legales">
+								<span class="w-6 text-center"><Fa icon={faScaleBalanced} /></span>
+								<span>Mentions légales</span>
 							</a>
 						</li>
 						<!--hr class="!my-4" /-->

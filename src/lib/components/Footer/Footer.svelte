@@ -54,6 +54,7 @@
 					<ul class="space-y-3">
 						<li><a class="anchor" href="/">Accueil</a></li>
 						<li><a class="anchor" href="/contact">Contact</a></li>
+						<li><a class="anchor" href="/mentions-legales">Mentions légales</a></li>
 					</ul>
 				</div>
 				<!--div class="space-y-6">
