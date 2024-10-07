@@ -72,13 +72,12 @@
 							<span class="flex-auto anchor">La MSP de Vedène</span>
 						</a>
 					</li>
-					<li>
-						<a href="https://saint-esprit-sante.fr">
+					<!--li>
+						<a href="https://">
 							<span class="badge">🌐</span>
-							<span class="flex-auto anchor">La MSP Saint-Esprit Santé à Bayonne</span>
+							<span class="flex-auto anchor">La MSP ...</span>
 						</a>
-					</li>
-					<!-- ... -->
+					</li-->
 				</ul>
 			</nav>
 		</div>
