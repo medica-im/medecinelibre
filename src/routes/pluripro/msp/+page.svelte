@@ -67,6 +67,12 @@
 			<nav class="list-nav">
 				<ul>
 					<li>
+						<a href="https://sante-gadagne.fr">
+							<span class="badge">🌐</span>
+							<span class="flex-auto anchor">La MSP de Châteauneuf-de-Gadagne</span>
+						</a>
+					</li>
+					<li>
 						<a href="https://msp-vedene.fr">
 							<span class="badge">🌐</span>
 							<span class="flex-auto anchor">La MSP de Vedène</span>

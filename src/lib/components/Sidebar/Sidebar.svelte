@@ -43,7 +43,6 @@
 	page.subscribe((page) => {
 		// ex: /basePath/...
 		let basePath: string = page.url.pathname.split('/')[1];
-		console.log(basePath);
 		if (!basePath) return;
 		// Translate base path to link section
 		if (['pluripro', 'msp', 'cpts'].includes(basePath)) currentRailCategory = '/pluripro';

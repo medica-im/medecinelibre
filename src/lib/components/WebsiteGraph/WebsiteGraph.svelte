@@ -227,7 +227,6 @@
 			context.stroke();
 			context.fill();
 			if (activeNode && d == activeNode && d.id != 'website') {
-				console.log('active');
 				context.fillStyle = $modeCurrent ? 'DarkBlue' : 'LightBlue';
 			} else {
 				context.fillStyle = $modeCurrent ? 'black' : 'white';

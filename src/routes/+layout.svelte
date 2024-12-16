@@ -96,6 +96,25 @@ import { storePopup } from '@skeletonlabs/skeleton';
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <script defer data-domain="medecinelibre.com" src="https://plausible.medica.im/js/script.js"></script>
+
+<!-- HTML Meta Tags -->
+<title>Médecine Libre</title>
+<meta name="description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://medecinelibre.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Médecine Libre: le numérique en santé, l'esprit libre.">
+<meta property="og:description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
+<meta property="og:image" content="https://medecinelibre.com/google-touch-icon.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="medecinelibre.com">
+<meta property="twitter:url" content="https://medecinelibre.com/">
+<meta name="twitter:title" content="Médecine Libre: le numérique en santé, l'esprit libre.">
+<meta name="twitter:description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
+<meta name="twitter:image" content="https://medecinelibre.com/google-touch-icon.png">
 </svelte:head>
 
 <!-- Overlays -->
