@@ -1,6 +1,6 @@
 <script lang='ts'>
 	import { initializeStores } from '@skeletonlabs/skeleton';
-	import { PUBLIC_GOOGLE_SITE_VERIFICATION } from '$env/static/public';
+	import { env } from '$env/dynamic/public';
 	// The ordering of these imports is critical to your app working properly
 	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
 	// Most of your app wide CSS should be put in this file
@@ -102,7 +102,7 @@ import { storePopup } from '@skeletonlabs/skeleton';
 <title>Médecine Libre</title>
 <meta name="description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
 
-<meta name="google-site-verification" content="{PUBLIC_GOOGLE_SITE_VERIFICATION}" />
+<meta name="google-site-verification" content="{env.PUBLIC_GOOGLE_SITE_VERIFICATION}" />
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://medecinelibre.com/">
