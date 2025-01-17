@@ -296,18 +296,18 @@
 </svelte:head>
 
 <svelte:window on:resize={resize} />
-<div class="container text-center w-fit p-4 space-y-4 border-0">
+<div class="text-center p-2 space-y-4 border-0 mx-auto">
 	<h2 class="h2">Un site web, plusieurs publics</h2>
-	<div class="flex flex-wrap justify-start w-fit gap-2 border-0">
+	<div class="card variant-soft flex flex-wrap justify-start w-fit gap-2 border-0 p-4">
 		<div on:resize={resize} class="graphContainer mx-auto w-fit">
 			<canvas use:fitToContainer bind:this={canvas} class="border-0" />
 		</div>
 
-		<div class="card p-2 space-y-2 w-96 shadow-xl mx-auto border-0">
+		<div class="card p-2 space-y-2 w-96 shadow-xl mx-auto border-0 p-2">
 			{#if activeNode.id}
-				<div class=".card-header"><h1 class="h1">{activeNode.title || activeNode.label}</h1></div>
+				<div class=".card-header"><h3 class="h3">{activeNode.title || activeNode.label}</h3></div>
 			{/if}
-			<div class="text-left">
+			<div class="text-left p-2 m-2">
 				{#if activeNode.id == 'people'}
 					<p>
 						Le contenu destiné aux usagers est élaboré en collaboration avec votre équipe. Il

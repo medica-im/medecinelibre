@@ -22,16 +22,14 @@
 	</section>
 
 	<section class="bg-surface-100-800-token">
-		<div class="section-container">
-			<div class="container mx-auto flex justify-center p-2">
+		<div class="section-container mx-auto flex justify-center">
 				<WebsiteGraph />
-			</div>
 		</div>
 	</section>
 
 	<section class="bg-surface-100-800-token">
-		<div class="section-container mx-auto flex justify-center p-2">
-					<div class="card block max-w-xl variant-ghost space-y-6 p-1">
+		<div class="section-container mx-auto flex justify-center p-8">
+					<div class="card block max-w-xl variant-ghost space-y-6 p-4 m-2">
 						<header class="card-header text-center">
 							<h2 class="h2">Testez Pluripro Web MSP!</h2>
 						</header>
