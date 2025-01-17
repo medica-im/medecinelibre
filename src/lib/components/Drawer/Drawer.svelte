@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { drawerStore, Drawer } from '@skeletonlabs/skeleton';
+	import { getDrawerStore, Drawer } from '@skeletonlabs/skeleton';
 	import Sidebar from '../Sidebar/Sidebar.svelte';
+	const drawerStore = getDrawerStore();
 
 	$: classesDrawer = $drawerStore.id === 'doc-sidenav' ? 'lg:hidden' : '';
 </script>

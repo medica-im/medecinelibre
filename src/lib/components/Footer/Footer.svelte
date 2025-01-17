@@ -10,12 +10,13 @@
 		faYoutube,
 		faSkype,
 		faGithub,
-		faMastodon
+		faMastodon,
+		faBluesky
 	} from '@fortawesome/free-brands-svg-icons';
 	import { faPhone } from '@fortawesome/free-solid-svg-icons';
 	// Base Classes
 	const cBase =
-		'bg-surface-50 dark:bg-surface-900 border-t border-surface-500/10 text-xs md:text-base';
+		'bg-surface border-t border-surface-500/10 text-xs md:text-base';
 	const cRowOne =
 		'flex flex-col md:flex-row justify-between items-center md:items-start space-y-5 md:space-y-0';
 	/*const cRowTwo =
@@ -127,6 +128,15 @@
 				>
 					<span><Fa icon={faMastodon} /></span>
 					<span class="hidden md:inline-block ml-2">Mastodon</span>
+				</a>
+				<a
+					class="btn variant-soft"
+					href="https://bsky.app/profile/medecinelibre.bsky.social"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<span><Fa icon={faBluesky} /></span>
+					<span class="hidden md:inline-block ml-2">Bluesky</span>
 				</a>
 				<a
 					class="btn variant-soft"

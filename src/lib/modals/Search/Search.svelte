@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { menuNavLinks, type List } from '$lib/links';
-	import { modalStore } from '@skeletonlabs/skeleton';
+	import { getModalStore } from '@skeletonlabs/skeleton';
 
+	const modalStore = getModalStore();
 	// Classes
 	const cBase =
 		'card bg-surface-100/60 dark:bg-surface-500/30 backdrop-blur-lg overflow-hidden w-full max-w-[800px] shadow-xl mt-8 mb-auto';

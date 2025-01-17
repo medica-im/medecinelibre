@@ -9,6 +9,7 @@
 		faSkype,
         faGithub,
         faMastodon,
+		faBluesky,
 	} from '@fortawesome/free-brands-svg-icons';
 	import {
 		faCircleNodes,
@@ -23,7 +24,6 @@
 		faPhone,
 		faEnvelope
 	} from '@fortawesome/free-solid-svg-icons';
-    	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -58,7 +58,16 @@
 					title="@medecinelibre@mastodon.medica.im"
 						><span class="badge variant-filled-primary"><Fa icon={faMastodon} /></span>
 
-						<span class="flex flex-wrap whitespace-normal text-left">@medecinelibre</span
+						<span class="flex flex-wrap whitespace-normal text-left">@medecinelibre@mastodon.medica.im</span
+						></a
+					>
+				</li>
+				<li>
+					<a href="https://bsky.app/profile/medecinelibre.bsky.social"
+					title="@medecinelibre.bsky.social"
+						><span class="badge variant-filled-primary"><Fa icon={faBluesky} /></span>
+
+						<span class="flex flex-wrap whitespace-normal text-left">@medecinelibre.bsky.social</span
 						></a
 					>
 				</li>

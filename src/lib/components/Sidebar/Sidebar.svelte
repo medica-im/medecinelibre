@@ -3,7 +3,7 @@
 
 	import Icon from '$lib/components/Icon/Icon.svelte';
 	import { AppRail, AppRailTile, AppRailAnchor } from '@skeletonlabs/skeleton';
-	import { drawerStore } from '@skeletonlabs/skeleton';
+	import { getDrawerStore } from '@skeletonlabs/skeleton';
 	import { menuNavLinks } from '$lib/links';
 	import Fa from 'svelte-fa';
 	import {
@@ -30,6 +30,7 @@
 		faGlobe,
 		faClipboardQuestion
 	} from '@fortawesome/free-solid-svg-icons';
+	const drawerStore = getDrawerStore();
 
 	// Local
 	let currentRailCategory: keyof typeof menuNavLinks | undefined = undefined;

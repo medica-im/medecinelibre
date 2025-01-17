@@ -303,9 +303,9 @@
 			<canvas use:fitToContainer bind:this={canvas} class="border-0" />
 		</div>
 
-		<div class="card p-2 space-y-2 w-80 shadow-xl mx-auto border-0">
+		<div class="card p-2 space-y-2 w-96 shadow-xl mx-auto border-0">
 			{#if activeNode.id}
-				<div class=".card-header"><h1>{activeNode.title || activeNode.label}</h1></div>
+				<div class=".card-header"><h1 class="h1">{activeNode.title || activeNode.label}</h1></div>
 			{/if}
 			<div class="text-left">
 				{#if activeNode.id == 'people'}

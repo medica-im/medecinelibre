@@ -17,7 +17,8 @@
 		faYoutube,
 		faSkype,
 		faGithub,
-		faMastodon
+		faMastodon,
+		faBluesky,
 	} from '@fortawesome/free-brands-svg-icons';
 	import {
 		faScaleBalanced,
@@ -35,12 +36,13 @@
 		faClipboardQuestion
 	} from '@fortawesome/free-solid-svg-icons';
 	// Components & Utilities
-	import { AppBar, LightSwitch, popup, modalStore } from '@skeletonlabs/skeleton';
+	import { AppBar, LightSwitch, popup, getModalStore } from '@skeletonlabs/skeleton';
 
 	// Stores
 	import { storeTheme } from '$lib/stores/stores';
-	import { drawerStore } from '@skeletonlabs/skeleton';
-
+	import { getDrawerStore } from '@skeletonlabs/skeleton';
+	const drawerStore = getDrawerStore();
+	const modalStore = getModalStore();
 	// Local
 	let isOsMac = false;
 
@@ -221,7 +223,7 @@
 						<h6 class="h6">Mode</h6>
 						<LightSwitch />
 					</section>
-					<nav class="list-nav p-4 -m-4 max-h-64 lg:max-h-[500px] overflow-y-auto">
+					<!--nav class="list-nav p-4 -m-4 max-h-64 lg:max-h-[500px] overflow-y-auto">
 						<form action="/?/setTheme" method="POST" use:enhance={setTheme}>
 							<ul>
 								{#each themes as { icon, name, type }}
@@ -240,7 +242,7 @@
 								{/each}
 							</ul>
 						</form>
-					</nav>
+					</nav-->
 				</div>
 				<div class="arrow bg-surface-100-800-token" />
 			</div>
@@ -249,10 +251,16 @@
 		<!-- Social -->
 		<!-- prettier-ignore -->
 		<section class="hidden sm:inline-flex space-x-4">
-			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://twitter.com/MedecineLibre" target="_blank" rel="noreferrer">
+			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://bsky.app/profile/medecinelibre.bsky.social"
+			title="@medecinelibre.bsky.social"
+			target="_blank"
+			rel="noreferrer">
+				<Fa icon={faBluesky} />
+			</a>
+			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://twitter.com/MedecineLibre" title="@MedecineLibre" target="_blank" rel="noreferrer">
 				<Fa icon={faTwitter} />
 			</a>
-			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-pinguet-177454b0/" target="_blank" rel="noreferrer">
+			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-pinguet-177454b0/" title="LinkedIn" target="_blank" rel="noreferrer">
 				<Fa icon={faLinkedin} />
 			</a>
 		</section>

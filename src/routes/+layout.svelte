@@ -1,8 +1,8 @@
 <script lang='ts'>
+	import { initializeStores } from '@skeletonlabs/skeleton';
+	import { PUBLIC_GOOGLE_SITE_VERIFICATION } from '$env/static/public';
 	// The ordering of these imports is critical to your app working properly
-	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
 	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
@@ -37,6 +37,7 @@ import { storePopup } from '@skeletonlabs/skeleton';
 
 	export let data: LayoutServerData;
 	import type { LayoutServerData } from './$types';
+	initializeStores();
 	let isBlogArticle = false;
 	// Registered list of Components for Modals
 	const modalComponentRegistry: Record<string, ModalComponent> = {
@@ -100,6 +101,8 @@ import { storePopup } from '@skeletonlabs/skeleton';
 <!-- HTML Meta Tags -->
 <title>Médecine Libre</title>
 <meta name="description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
+
+<meta name="google-site-verification" content="{PUBLIC_GOOGLE_SITE_VERIFICATION}" />
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://medecinelibre.com/">
