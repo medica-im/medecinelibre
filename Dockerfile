@@ -1,18 +1,15 @@
-FROM node:18-alpine AS builder
+FROM node:18-alpine AS build
 
 WORKDIR /app
-COPY package*.json .
-RUN npm ci
 COPY . .
+RUN npm ci
 RUN npm run build --verbose
-RUN npm prune --production
 
-FROM node:18-alpine
+FROM node:18-alpine AS deploy-node
 
 WORKDIR /app
-COPY --from=builder /app/build build/
-COPY --from=builder /app/node_modules node_modules/
-COPY package.json .
-EXPOSE 3000
-ENV NODE_ENV=production
-CMD node -r dotenv/config build
+RUN rm -rf ./*
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/build .
+RUN npm ci --force
+CMD ["node", "index.js"]
