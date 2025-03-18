@@ -37,7 +37,7 @@
 				<div>
 					<p class="!text-sm opacity-80">Applications & sites web pour la santé pluripro.</p>
 				</div>
-				<a href="tel:+33977215435"><div class="flex space-x-2 items-center"><span><Fa icon={faPhone} size="xs"/></span><span>0977215435</span></div></a>
+				<a href="tel:+33356894550"><div class="flex space-x-2 items-center"><span><Fa icon={faPhone} size="xs"/></span><span>0356894550</span></div></a>
 				
 			</div>
 			<div class="hidden md:grid grid-cols-3 gap-8">

@@ -40,10 +40,10 @@
 		<nav class="list-nav underline">
 			<ul>
 				<li>
-					<a href="tel:+33977215435">
+					<a href="tel:+33356894550">
 						<span class="badge variant-filled-primary"><Fa icon={faPhone} /></span>
 
-						<span class="flex flex-wrap whitespace-normal text-left">09 77 21 54 35</span></a
+						<span class="flex flex-wrap whitespace-normal text-left">03 56 89 45 50</span></a
 					>
 				</li>
 				<li>
