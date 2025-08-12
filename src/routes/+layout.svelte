@@ -1,5 +1,6 @@
 <script lang='ts'>
-	import { PUBLIC_PLAUSIBLE_SCRIPT_SRC, PUBLIC_GOOGLE_SITE_VERIFICATION } from '$env/static/public';
+	import { PUBLIC_GOOGLE_SITE_VERIFICATION } from '$env/static/public';
+	import { PUBLIC_PLAUSIBLE_SCRIPT_SRC } from '$env/static/public';
 	import { initializeStores } from '@skeletonlabs/skeleton';
     import '../app.postcss';
 	import { storePopup } from '@skeletonlabs/skeleton';
