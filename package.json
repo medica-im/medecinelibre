@@ -1,19 +1,19 @@
 {
-	"name": "skeleton-pluripro",
+	"name": "medecinelibre",
 	"version": "1.0.0",
 	"private": true,
+	"packageManager": "pnpm@10.4.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit sync && vite build",
 		"preview": "vite preview",
-		"test": "playwright test",
+		"test": "vite test",
 		"sync": "svelte-kit sync",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write .",
-		"postinstall": "svelte-kit sync"
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
 		"@floating-ui/dom": "^1.2.8",
@@ -41,7 +41,7 @@
 		"postcss": "^8.5.1",
 		"prettier": "^3.0.1",
 		"svelte": "^5.38.1",
-		"svelte-check": "^3.6.0",
+		"svelte-check": "^4.3.0",
 		"svelte-preprocess": "^6.0.3",
 		"tailwindcss": "^3.4.9",
 		"tslib": "^2.4.1",

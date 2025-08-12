@@ -1,13 +1,8 @@
 <script lang='ts'>
-	import { initializeStores } from '@skeletonlabs/skeleton';
 	import { PUBLIC_PLAUSIBLE_SCRIPT_SRC, PUBLIC_GOOGLE_SITE_VERIFICATION } from '$env/static/public';
-	// The ordering of these imports is critical to your app working properly
-	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
-	// Most of your app wide CSS should be put in this file
-	import '../app.postcss';
-
-// Dependency: Floating UI
-import { storePopup } from '@skeletonlabs/skeleton';
+	import { initializeStores } from '@skeletonlabs/skeleton';
+    import '../app.postcss';
+	import { storePopup } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
@@ -38,7 +33,6 @@ import { storePopup } from '@skeletonlabs/skeleton';
 	export let data: LayoutServerData;
 	import type { LayoutServerData } from './$types';
 	initializeStores();
-	let isBlogArticle = false;
 	// Registered list of Components for Modals
 	const modalComponentRegistry: Record<string, ModalComponent> = {
 		modalSearch: { ref: Search }
