@@ -13,7 +13,7 @@
 		faMastodon,
 		faBluesky
 	} from '@fortawesome/free-brands-svg-icons';
-	import { faPhone } from '@fortawesome/free-solid-svg-icons';
+	import { faPhone, faBlog } from '@fortawesome/free-solid-svg-icons';
 	// Base Classes
 	const cBase =
 		'bg-surface border-t border-surface-500/10 text-xs md:text-base';
@@ -54,6 +54,7 @@
 					<h6 class="h6">Navigation</h6>
 					<ul class="space-y-3">
 						<li><a class="anchor" href="/">Accueil</a></li>
+						<li><a class="anchor" href="/blog">Blog</a></li>
 						<li><a class="anchor" href="/contact">Contact</a></li>
 						<li><a class="anchor" href="/mentions-legales">Mentions légales</a></li>
 					</ul>

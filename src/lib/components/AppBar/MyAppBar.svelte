@@ -33,7 +33,8 @@
 		faEnvelope,
 		faPeopleGroup,
 		faGlobe,
-		faClipboardQuestion
+		faClipboardQuestion,
+		faBlog
 	} from '@fortawesome/free-solid-svg-icons';
 	// Components & Utilities
 	import { AppBar, LightSwitch, popup, getModalStore } from '@skeletonlabs/skeleton';
@@ -162,7 +163,7 @@
 						<!--hr class="!my-4" /-->
 					</ul>
 				</nav>
-				<div class="arrow bg-surface-100-800-token" />
+				<div class="arrow bg-surface-100-800-token"></div>
 			</div>
 		</div>
 
@@ -187,6 +188,12 @@
 							</a>
 						</li>
 						<li>
+							<a href="/blog">
+								<span class="w-6 text-center"><Fa icon={faBlog} /></span>
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
 							<a href="/contact">
 								<span class="w-6 text-center"><Fa icon={faEnvelope} /></span>
 								<span>Contact</span>
@@ -201,7 +208,7 @@
 						<!--hr class="!my-4" /-->
 					</ul>
 				</nav>
-				<div class="arrow bg-surface-100-800-token" />
+				<div class="arrow bg-surface-100-800-token"></div>
 			</div>
 		</div>
 
@@ -244,13 +251,19 @@
 						</form>
 					</nav-->
 				</div>
-				<div class="arrow bg-surface-100-800-token" />
+				<div class="arrow bg-surface-100-800-token"></div>
 			</div>
 		</div>
 
 		<!-- Social -->
 		<!-- prettier-ignore -->
 		<section class="hidden sm:inline-flex space-x-4">
+			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://medecinelibre.com/blog"
+			title="Blog"
+			target="_blank"
+			rel="external">
+				<Fa icon={faBlog} />
+			</a>
 			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://bsky.app/profile/medecinelibre.bsky.social"
 			title="@medecinelibre.bsky.social"
 			target="_blank"

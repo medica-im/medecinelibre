@@ -28,7 +28,8 @@
 		faEnvelope,
 		faPeopleGroup,
 		faGlobe,
-		faClipboardQuestion
+		faClipboardQuestion,
+		faBlog
 	} from '@fortawesome/free-solid-svg-icons';
 	const drawerStore = getDrawerStore();
 
@@ -73,7 +74,7 @@
 			<svelte:fragment slot="lead"><Fa icon={faGlobe} size="lg" class="inline-block outline-none" /></svelte:fragment>
 			<span>Pluripro</span>
 		</AppRailTile>
-		<hr class="opacity-30" />
+		<!--hr class="opacity-30" /-->
 		<AppRailTile bind:group={currentRailCategory} name="tele-expertise" value={'/tele-expertise'}>
 			<svelte:fragment slot="lead"
 				><Fa
@@ -84,6 +85,16 @@
 			>
 			<span>Télé-expertise</span>
 		</AppRailTile>
+		<AppRailAnchor
+			href="/blog"
+			class="lg:hidden"
+			on:click={() => {
+				onClickAnchor();
+			}}
+		>
+			<svelte:fragment slot="lead"><Fa icon={faBlog} size="lg" class="inline-block outline-none" /></svelte:fragment>
+			<span>Blog</span>
+		</AppRailAnchor>
 		<AppRailAnchor
 			href="/contact"
 			class="lg:hidden"

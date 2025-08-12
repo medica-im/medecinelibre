@@ -1,6 +1,7 @@
 <script lang='ts'>
 	import { initializeStores } from '@skeletonlabs/skeleton';
 	import { env } from '$env/dynamic/public';
+	import { PUBLIC_PLAUSIBLE_SCRIPT_SRC } from '$env/static/public';
 	// The ordering of these imports is critical to your app working properly
 	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
 	// Most of your app wide CSS should be put in this file
@@ -96,7 +97,9 @@ import { storePopup } from '@skeletonlabs/skeleton';
 <link rel="mask-icon" href="/favicon.svg" color="#000000">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
-<script defer data-domain="medecinelibre.com" src="https://plausible.medica.im/js/script.js"></script>
+{#if PUBLIC_PLAUSIBLE_SCRIPT_SRC}
+<script defer data-domain="medecinelibre.com" src={PUBLIC_PLAUSIBLE_SCRIPT_SRC}></script>
+{/if}
 
 <!-- HTML Meta Tags -->
 <title>Médecine Libre</title>
