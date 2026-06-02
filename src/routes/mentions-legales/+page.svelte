@@ -52,7 +52,7 @@
 		</div>
 		<div class="flex gap-3">
 			<div class="badge variant-filled-primary w-6"><Fa icon={faEnvelope} /></div>
-			<div>info@medecinelibre.com</div>
+			<div>jerome@medecinelibre.com</div>
 		</div>
 		<div class="flex gap-3">
 			<div class="badge variant-filled-primary w-6"><Fa icon={faLocationDot} /></div>

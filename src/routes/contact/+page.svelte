@@ -47,10 +47,10 @@
 					>
 				</li>
 				<li>
-					<a href="mailto:info@medecinelibre.com"
+					<a href="mailto:jerome@medecinelibre.com"
 						><span class="badge variant-filled-primary"><Fa icon={faEnvelope} /></span>
 
-						<span class="flex flex-wrap whitespace-normal text-left">info@medecinelibre.com</span></a
+						<span class="flex flex-wrap whitespace-normal text-left">jerome@medecinelibre.com</span></a
 					>
 				</li>
 				<li>
