@@ -13,7 +13,7 @@
 			<LogoFull />
 		</figure>
 	</div>
-	<div class="space-y-4 lg:space-y-10 mx-auto text-center items-center w-fit p-4">
+	<div class="space-y-4 lg:space-y-10 p-4">
 		<CTA/>
 	</div>
 </div>

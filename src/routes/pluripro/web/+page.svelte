@@ -17,6 +17,6 @@
 
 	<p>Pour contribuer au succès de votre maison de santé, de votre équipe de soins primaires ou de votre CPTS, nous vous proposons la solution Pluripro Web qui intègre non seulement un site web public sur mesure mais également des outils collaboratifs spécialisés accessibles aux membres de votre équipe après connexion.</p>
 	<div class="space-y-4 lg:space-y-10 mx-auto text-center items-center w-fit p-4">
-	<CTA/>
+	<CTA showTitle={false}/>
 	</div>
 </div>
