@@ -111,7 +111,7 @@
 				</a>
 				-->
 			</p>
-			<div class="flex space-x-4">
+			<div class="flex flex-wrap justify-center md:justify-end gap-2 md:gap-4 max-w-full">
 				<a
 					class="btn variant-soft"
 					href="https://github.com/jeromecc"
@@ -156,6 +156,15 @@
 				>
 					<span><Fa icon={faLinkedin} /></span>
 					<span class="hidden md:inline-block ml-2">LinkedIn</span>
+				</a>
+				<a
+					class="btn variant-soft"
+					href="https://www.youtube.com/@medecinelibre"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<span><Fa icon={faYoutube} /></span>
+					<span class="hidden md:inline-block ml-2">YouTube</span>
 				</a>
 			</div>
 		</section>

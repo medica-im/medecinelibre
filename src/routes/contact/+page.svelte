@@ -89,6 +89,15 @@
 						></a
 					>
 				</li>
+				<li>
+					<a href="https://www.youtube.com/@medecinelibre"
+					title="@medecinelibre"
+						><span class="badge variant-filled-primary"><Fa icon={faYoutube} /></span>
+
+						<span class="flex flex-wrap whitespace-normal text-left">@medecinelibre</span
+						></a
+					>
+				</li>
 			</ul>
 		</nav>
 		</div>

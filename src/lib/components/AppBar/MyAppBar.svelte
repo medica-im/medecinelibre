@@ -276,6 +276,9 @@
 			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-pinguet-177454b0/" title="LinkedIn" target="_blank" rel="noreferrer">
 				<Fa icon={faLinkedin} />
 			</a>
+			<a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://www.youtube.com/@medecinelibre" title="YouTube" target="_blank" rel="noreferrer">
+				<Fa icon={faYoutube} />
+			</a>
 		</section>
 
 		<!-- Search -->
