@@ -3,11 +3,15 @@ services:
     restart: always
     env_file:
       - .env
-    build:
-      context: .
     image: "${DOCKER_IMAGE_NAME}"
     ports:
       - "${NODE_PORT_EXTERNAL_PRODUCTION}:3000"
     environment:
       NODE_ENV: production
       ORIGIN: ${ORIGIN}
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get({host:'127.0.0.1',port:3000,path:'/'},r=>process.exit(r.statusCode<500?0:1)).on('error',()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s

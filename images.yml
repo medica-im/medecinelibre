@@ -1,0 +1,38 @@
+# Source of truth for medecinelibre.com images: how each is built and where
+# it runs.
+#
+# Each entry fully specifies one buildable image — the .env file baked in,
+# the docker build --target, and the resulting tag. The host/dir/service
+# fields say where that tag runs, so deploying is a pull and a restart,
+# never a rebuild on the server.
+#
+#   Build:  ./scripts/build-image.sh <name>
+#   Deploy: ./scripts/deploy-image.sh <name>
+#   Both:   ./scripts/release.sh <name>
+#   List:   ./scripts/build-image.sh --list
+#
+# host: values are ssh aliases from ~/.ssh/config.
+#
+# Note production runs on the `blog` host, not the `production` one —
+# blog.medica.im (164.92.254.85) is what medecinelibre.com resolves to.
+# The `production` alias is a different machine entirely; deploying there
+# would quietly do nothing to this site.
+
+images:
+  - name: production
+    target: production
+    env_file: .env.production.medecinelibre.com
+    tag: ghcr.io/medica-im/medecinelibre:production
+    host: blog
+    dir: /opt/medecinelibre.com
+    compose_file: docker-compose-production.yml
+    url: https://medecinelibre.com
+
+  - name: staging
+    target: staging
+    env_file: .env.staging.medecinelibre.com
+    tag: ghcr.io/medica-im/medecinelibre:staging
+    host: staging
+    dir: /opt/staging.medecinelibre.com
+    compose_file: docker-compose-staging.yml
+    url: https://staging.medecinelibre.com
