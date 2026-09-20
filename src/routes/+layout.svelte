@@ -93,7 +93,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 {#if PUBLIC_PLAUSIBLE_SCRIPT_SRC}
-<script defer data-domain="medecinelibre.com" src={PUBLIC_PLAUSIBLE_SCRIPT_SRC}></script>
+<script defer data-domain={page.url.hostname} src={PUBLIC_PLAUSIBLE_SCRIPT_SRC}></script>
 {/if}
 
 <!-- Set VITE_NOINDEX in the environment's .env to keep dev and staging out
@@ -103,26 +103,13 @@
 <meta name="robots" content="noindex">
 {/if}
 
-<!-- HTML Meta Tags -->
-<title>Médecine Libre</title>
-<meta name="description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
-
-<meta name="google-site-verification" content="{PUBLIC_GOOGLE_SITE_VERIFICATION}" />
-
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://medecinelibre.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Médecine Libre: le numérique en santé, l'esprit libre.">
-<meta property="og:description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
-<meta property="og:image" content="https://medecinelibre.com/google-touch-icon.png">
-
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="medecinelibre.com">
-<meta property="twitter:url" content="https://medecinelibre.com/">
-<meta name="twitter:title" content="Médecine Libre: le numérique en santé, l'esprit libre.">
-<meta name="twitter:description" content="Applications web mobiles, sites web et communication pour MSP (maison de santé pluriprofessionnelle), centre de santé, clinique et CPTS.">
-<meta name="twitter:image" content="https://medecinelibre.com/google-touch-icon.png">
+<!-- Page title, description, canonical and social tags come from the Seo
+     component, once per route: see $lib/components/Seo/Seo.svelte. They used
+     to be hardcoded here, which gave every page the homepage's description
+     and an og:url pointing at "/" — so social shares of any landing page
+     rendered the homepage card, and Google saw one description sitewide.
+     Only genuinely global tags belong in this file. -->
+<meta name="google-site-verification" content={PUBLIC_GOOGLE_SITE_VERIFICATION} />
 </svelte:head>
 
 <!-- Overlays -->
