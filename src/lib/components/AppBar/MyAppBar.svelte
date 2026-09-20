@@ -32,7 +32,7 @@
 		faMagnifyingGlass,
 		faEnvelope,
 		faPeopleGroup,
-		faGlobe,
+		faAddressBook,
 		faClipboardQuestion,
 		faBlog
 	} from '@fortawesome/free-solid-svg-icons';
@@ -137,7 +137,7 @@
 					<ul>
 						<li>
 							<a href="/annuaire-cpts">
-								<span class="w-6 text-center"><Fa icon={faGlobe} /></span>
+								<span class="w-6 text-center"><Fa icon={faAddressBook} /></span>
 								<span>Annuaire CPTS</span>
 							</a>
 						</li>

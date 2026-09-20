@@ -27,7 +27,6 @@
 		faMagnifyingGlass,
 		faEnvelope,
 		faPeopleGroup,
-		faGlobe,
 		faClipboardQuestion,
 		faInfo,
 		faBlog
@@ -79,7 +78,7 @@
 		<!-- prettier-ignore -->
 		<!-- prettier-ignore -->
 		<AppRailTile bind:group={currentRailCategory} name="cpts" value={'/cpts'}>
-			<svelte:fragment slot="lead"><Fa icon={faGlobe} size="lg" class="inline-block outline-none" /></svelte:fragment>
+			<svelte:fragment slot="lead"><Fa icon={faCircleNodes} size="lg" class="inline-block outline-none" /></svelte:fragment>
 			<span>CPTS</span>
 		</AppRailTile>
 		<!-- prettier-ignore -->
