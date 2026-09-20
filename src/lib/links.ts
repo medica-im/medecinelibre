@@ -28,7 +28,7 @@ export const menuNavLinks: Record<string, Array<{ title: string; list: List }>> 
 			list: [
 				{
 					href: '/annuaire-cpts',
-					label: 'Annuaire & intranet',
+					label: 'Annuaire',
 					keywords: 'annuaire, cpts, intranet, cartographie, parcours de soins'
 				},
 				{
