@@ -1,6 +1,7 @@
 <script lang='ts'>
 	import { PUBLIC_GOOGLE_SITE_VERIFICATION } from '$env/static/public';
 	import { PUBLIC_PLAUSIBLE_SCRIPT_SRC } from '$env/static/public';
+	import { NOINDEX } from '$lib/noindex';
 	import { initializeStores } from '@skeletonlabs/skeleton';
     import '../app.postcss';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -93,6 +94,13 @@
 <link rel="manifest" href="/manifest.json">
 {#if PUBLIC_PLAUSIBLE_SCRIPT_SRC}
 <script defer data-domain="medecinelibre.com" src={PUBLIC_PLAUSIBLE_SCRIPT_SRC}></script>
+{/if}
+
+<!-- Set VITE_NOINDEX in the environment's .env to keep dev and staging out
+     of search results. robots.txt reads the same flag; see
+     src/routes/robots.txt/+server.ts for why both layers exist. -->
+{#if NOINDEX}
+<meta name="robots" content="noindex">
 {/if}
 
 <!-- HTML Meta Tags -->
