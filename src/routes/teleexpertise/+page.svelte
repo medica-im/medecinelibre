@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Seo from '$lib/components/Seo/Seo.svelte';
 	import { page } from '$app/stores';
 
 const mastodonUrlRoot = "https://mastodon.medica.im/@";
@@ -84,6 +85,12 @@ const twitterUrlRoot = "https://twitter.com/"
 		return totalFollowers;
 	}
 </script>
+
+<Seo
+	title="Télé-expertise: SantéTocToc, l'entraide entre professionnels de santé"
+	description="SantéTocToc et @doctoctocbot: le réseau d'entraide interprofessionnelle qui diffuse les questions des professionnels de santé vérifiés à près de 10 000 membres."
+/>
+
 
 <div class="container mx-auto space-y-8 p-4">
 	<div class="text-center">
