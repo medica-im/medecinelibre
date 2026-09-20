@@ -13,17 +13,17 @@
 #
 # host: values are ssh aliases from ~/.ssh/config.
 #
-# Note production runs on the `blog` host, not the `production` one —
-# blog.medica.im (164.92.254.85) is what medecinelibre.com resolves to.
-# The `production` alias is a different machine entirely; deploying there
-# would quietly do nothing to this site.
+# Note the production host alias is `medecinelibre.com`, NOT `production` —
+# that alias is a different machine entirely, and deploying there would
+# quietly do nothing to this site. The alias points at blog.medica.im, the
+# box's own name; `blog` still works as a second name for it.
 
 images:
   - name: production
     target: production
     env_file: .env.production.medecinelibre.com
     tag: ghcr.io/medica-im/medecinelibre:production
-    host: blog
+    host: medecinelibre.com
     dir: /opt/medecinelibre.com
     compose_file: docker-compose-production.yml
     url: https://medecinelibre.com

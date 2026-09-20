@@ -6,11 +6,13 @@ Three environments, two of them containerised.
 |---|---|---|---|---|
 | dev | https://dev.medecinelibre.com | `dev` | `vite dev`, hot reload | 5173 |
 | staging | https://staging.medecinelibre.com | `staging` | built container | 3105 |
-| production | https://medecinelibre.com | `blog` | built container | 3004 |
+| production | https://medecinelibre.com | `medecinelibre.com` | built container | 3004 |
 
-Production runs on the **`blog`** host, not the `production` one — that
-alias is a different machine. `images.yml` records this; deploying to the
-wrong host would quietly do nothing to the live site.
+The production ssh alias is **`medecinelibre.com`**, not `production` —
+that alias is a different machine. The host itself is `blog.medica.im`,
+which serves several sites, and `blog` remains an alias for it.
+`images.yml` records this; deploying to the wrong host would quietly do
+nothing to the live site.
 
 ## Day to day
 
