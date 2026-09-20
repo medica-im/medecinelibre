@@ -111,9 +111,14 @@
 			une personne pour faire apparaître immédiatement une nouvelle entrée.
 		</p>
 		<p>
-			Si vous ajoutez le mail de la personne (qui peut rester privé, visible seulement par les
-			administrateurs), elle pourra accéder directement à sa propre fiche, la compléter et la
-			mettre à jour elle-même. Chaque professionnel devient acteur de la communauté.
+			Deux façons de faire, selon ce qui vous arrange. La coordinatrice peut envoyer une
+			invitation à un membre: celui-ci crée alors lui-même son entrée de A à Z.
+		</p>
+		<p>
+			Elle peut aussi créer l'entrée et y ajouter l'adresse mail du propriétaire de l'entrée,
+			qui reste toujours confidentielle. Le propriétaire est alors reconnu quand il se
+			connecte, et peut compléter ou modifier sa fiche. Chaque professionnel devient acteur de
+			la communauté.
 		</p>
 		<p>
 			Voici ce que voit un professionnel qui met sa fiche à jour — photo, coordonnées, horaires
@@ -153,7 +158,7 @@
 		<h2 class="h2">Ce que comprend l'annuaire</h2>
 		<ul class="list space-y-2">
 			{#each [
-				'annuaire des membres modifiable par le coordinateur ou par les membres eux-mêmes',
+				'annuaire des membres modifiable par la coordinatrice ou par les membres eux-mêmes',
 				'cartographie des membres et de leurs établissements',
 				'page détaillée dédiée à chaque membre, avec sa propre adresse web',
 				'accès intranet: certaines données réservées aux membres ou aux administrateurs',
