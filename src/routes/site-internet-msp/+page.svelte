@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo/Seo.svelte';
 	import Fa from 'svelte-fa';
-	import { faSquareCheck, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
+	import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
 	const accueil = '/images/offres/accueil_msp_v2.jpg';
 	const annuaireMobile = '/images/offres/annuaire_mobile_msp.jpg';
@@ -44,15 +45,11 @@
 		</p>
 		<div class="flex flex-wrap justify-center gap-4">
 			<a class="btn variant-filled-primary" href="/contact">Demander un devis gratuit</a>
-			<a
-				class="btn variant-ghost"
+			<ExternalLink
 				href="https://sante-gadagne.fr"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<span>Voir un site en production</span>
-				<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-			</a>
+				label="Voir un site en production"
+				class="btn variant-ghost"
+			/>
 		</div>
 	</header>
 

@@ -78,6 +78,14 @@ export const realisations: Realisation[] = [
 			"Site complet avec une page par mission socle et par groupe de travail: un tableau de bord vivant plutôt qu'une vitrine figée."
 	},
 	{
+		slug: 'unipa',
+		name: 'UNIPA',
+		kind: 'Annuaire intégré à un site WordPress',
+		url: 'https://unipa.fr/annuaire',
+		summary:
+			"Annuaire servi comme une rubrique d'un site WordPress existant, sous le même nom de domaine: le site reste en place, l'annuaire s'ajoute à /annuaire."
+	},
+	{
 		slug: 'msp-gadagne',
 		name: 'MSP de Châteauneuf-de-Gadagne',
 		kind: 'Site internet MSP multi-sites',

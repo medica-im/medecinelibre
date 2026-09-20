@@ -2,12 +2,12 @@
 	import Seo from '$lib/components/Seo/Seo.svelte';
 	import LogoFull from '$lib/components/Logos/LogoFull.svelte';
 	import Fa from 'svelte-fa';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
 	import {
 		faCircleNodes,
 		faPeopleGroup,
 		faAddressBook,
-		faComments,
-		faArrowUpRightFromSquare
+		faComments
 	} from '@fortawesome/free-solid-svg-icons';
 	import { offers, realisations } from '$lib/content/offers';
 
@@ -70,10 +70,7 @@
 				<div class="card variant-ghost p-4 space-y-2">
 					<h3 class="h4">{r.name}</h3>
 					<p class="text-sm opacity-75">{r.kind}</p>
-					<a class="anchor text-sm" href={r.url} target="_blank" rel="noopener noreferrer">
-						{r.url.replace('https://', '')}
-						<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-					</a>
+					<ExternalLink href={r.url} class="anchor text-sm" />
 				</div>
 			{/each}
 		</div>

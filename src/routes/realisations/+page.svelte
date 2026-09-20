@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo/Seo.svelte';
-	import Fa from 'svelte-fa';
-	import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
 	import { realisations } from '$lib/content/offers';
 </script>
 
@@ -24,10 +23,7 @@
 				<h2 class="h3">{r.name}</h2>
 				<p class="text-sm opacity-75">{r.kind}</p>
 				<p>{r.summary}</p>
-				<a class="anchor" href={r.url} target="_blank" rel="noopener noreferrer">
-					{r.url.replace('https://', '')}
-					<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-				</a>
+				<ExternalLink href={r.url} />
 			</section>
 		{/each}
 	</div>

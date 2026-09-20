@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo/Seo.svelte';
-	import Fa from 'svelte-fa';
-	import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
 </script>
 
 <Seo
@@ -25,15 +24,11 @@
 			n'est pas nécessaire de créer un compte. Le test est gratuit et sans engagement.
 		</p>
 		<div class="flex flex-wrap gap-4">
-			<a
-				class="btn variant-filled-primary"
+			<ExternalLink
 				href="https://annuaire.medica.im"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<span>Ouvrir la CPTS Virtuelle</span>
-				<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-			</a>
+				label="Ouvrir la CPTS Virtuelle"
+				class="btn variant-filled-primary"
+			/>
 			<a class="btn variant-ghost" href="/annuaire-cpts">Revoir l'offre annuaire</a>
 		</div>
 	</section>
@@ -43,15 +38,10 @@
 		<p>
 			Le bac à sable est une copie libre de l'annuaire utilisé par de vraies CPTS. Pour voir
 			l'application en usage réel, avec les données d'un territoire, consultez
-			<a
-				class="anchor"
+			<ExternalLink
 				href="https://annuaire.cptsopalesud.fr"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				l'annuaire de la CPTS Opale Sud
-				<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-			</a>.
+				label="l'annuaire de la CPTS Opale Sud"
+			/>.
 		</p>
 		<p>
 			Une question sur une fonctionnalité, ou un besoin spécifique à votre territoire?

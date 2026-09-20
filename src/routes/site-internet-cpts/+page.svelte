@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo/Seo.svelte';
 	import Fa from 'svelte-fa';
-	import { faSquareCheck, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
+	import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
 	/**
 	 * Sells the full website package. The annuaire is part of it, but gets two
@@ -24,15 +25,11 @@
 		</p>
 		<div class="flex flex-wrap justify-center gap-4">
 			<a class="btn variant-filled-primary" href="/contact">Demander un devis gratuit</a>
-			<a
-				class="btn variant-ghost"
+			<ExternalLink
 				href="https://santelyon3.fr"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<span>Voir le site de la CPTS Lyon 3ème</span>
-				<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-			</a>
+				label="Voir le site de la CPTS Lyon 3ème"
+				class="btn variant-ghost"
+			/>
 		</div>
 	</header>
 

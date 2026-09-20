@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo/Seo.svelte';
 	import Fa from 'svelte-fa';
-	import { faSquareCheck, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
+	import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
 	/**
 	 * Sells the annuaire as a standalone app. Deliberately does NOT describe
@@ -161,16 +162,25 @@
 	<section class="card variant-ghost p-6 space-y-4">
 		<h2 class="h2">Déjà un site web? L'annuaire s'y branche</h2>
 		<p>
-			L'annuaire fonctionne seul, sur un sous-domaine de votre CPTS — comme
-			<a
-				class="anchor"
-				href="https://annuaire.cptsopalesud.fr"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				annuaire.cptsopalesud.fr
-				<span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-			</a>. Vous gardez votre site existant.
+			L'annuaire n'impose pas de refaire votre site. Il fonctionne seul et s'intègre à ce que
+			vous avez déjà, de deux façons.
+		</p>
+		<h3 class="h4">Sur un sous-domaine</h3>
+		<p>
+			L'annuaire vit sur son propre sous-domaine, comme
+			<ExternalLink href="https://annuaire.cptsopalesud.fr" />. Votre site actuel n'est pas
+			touché: vous ajoutez simplement un lien vers l'annuaire.
+		</p>
+		<h3 class="h4">Intégré dans un site existant, y compris WordPress</h3>
+		<p>
+			L'annuaire peut aussi apparaître comme une rubrique de votre site actuel, à une adresse
+			du type <code class="code">votresite.fr/annuaire</code>. Pour les visiteurs comme pour
+			les moteurs de recherche, c'est une page de votre site: même domaine, même navigation.
+		</p>
+		<p>
+			C'est ce que nous avons mis en place pour l'UNIPA avec un site WordPress:
+			<ExternalLink href="https://unipa.fr/annuaire" />. Votre WordPress continue de vivre
+			normalement, et l'annuaire est servi sous le même nom de domaine.
 		</p>
 		<p>
 			Si vous cherchez plutôt le site web complet de votre CPTS, avec une page par mission

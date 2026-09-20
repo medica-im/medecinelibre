@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo/Seo.svelte';
-	import Fa from 'svelte-fa';
-	import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
 
 	/**
 	 * The company history here came from /pluripro/web, which this structure
@@ -94,34 +93,13 @@
 		<h2 class="h2">Nous suivre</h2>
 		<ul class="list space-y-2">
 			<li>
-				<a
-					class="anchor"
-					href="https://www.linkedin.com/in/jerome-pinguet/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					LinkedIn <span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-				</a>
+				<ExternalLink href="https://www.linkedin.com/in/jerome-pinguet/" label="LinkedIn" />
 			</li>
 			<li>
-				<a
-					class="anchor"
-					href="https://bsky.app/profile/medecinelibre.bsky.social"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Bluesky <span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-				</a>
+				<ExternalLink href="https://bsky.app/profile/medecinelibre.bsky.social" label="Bluesky" />
 			</li>
 			<li>
-				<a
-					class="anchor"
-					href="https://www.youtube.com/@medecinelibre"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					YouTube <span class="text-xs"><Fa icon={faArrowUpRightFromSquare} /></span>
-				</a>
+				<ExternalLink href="https://www.youtube.com/@medecinelibre" label="YouTube" />
 			</li>
 		</ul>
 	</section>
