@@ -15,13 +15,32 @@ body {
 	font-display: swap;
 }
 
-root {
-    --theme-font-family-base: 'Quicksand', sans-serif;
-    --theme-font-family-heading: 'Quicksand', sans-serif;
-    /* ... */
-}
-
+/* NB: this block was previously written `root {`, without the colon. That is
+   not a valid selector, so none of it applied — the Quicksand family comes
+   from the Skeleton theme, which sets the same variables. Kept as `:root` so
+   the declarations are real, and so overriding the family here works. */
 :root {
+	--theme-font-family-base: 'Quicksand', sans-serif;
+	--theme-font-family-heading: 'Quicksand', sans-serif;
 	--theme-rounded-base: 20px;
 	--theme-rounded-container: 4px;
+}
+
+/* Base reading size. The Skeleton theme leaves body at 1rem/1.5rem, which is
+   fine for an app UI but small for marketing pages that are mostly prose in a
+   single column — these pages ask a coordinator to read several paragraphs.
+   17px with a looser line-height is easier on long text while staying well
+   short of a "large print" look; headings scale from the same root. */
+html {
+	font-size: 106.25%; /* 17px at a 16px default */
+}
+
+body {
+	line-height: 1.65;
+}
+
+/* Long-form paragraphs get a comfortable measure. Wider than this and the eye
+   loses the line start on a large monitor. */
+.container p {
+	max-width: 68ch;
 }
