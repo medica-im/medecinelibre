@@ -83,7 +83,7 @@ export const realisations: Realisation[] = [
 		kind: 'Annuaire intégré à un site WordPress',
 		url: 'https://unipa.fr/annuaire',
 		summary:
-			"Annuaire servi comme une rubrique d'un site WordPress existant, sous le même nom de domaine: le site reste en place, l'annuaire s'ajoute à /annuaire."
+			"Union Nationale des Infirmiers en Pratique Avancée: l'annuaire des adhérents est servi comme une rubrique de leur site WordPress existant, sous le même nom de domaine. Le site reste en place, l'annuaire s'ajoute à /annuaire."
 	},
 	{
 		slug: 'msp-gadagne',

@@ -26,7 +26,7 @@
 
 <Seo
 	title="Médecine Libre"
-	description="Sites web et applications pour les MSP, les CPTS et les organisations de santé: annuaires de territoire, sites internet, outils collaboratifs. Accompagnement sur le long terme."
+	description="Sites web et applications pour les MSP, les CPTS et les organisations professionnelles du secteur de la santé: annuaires, sites internet, outils collaboratifs. Accompagnement sur le long terme."
 />
 
 <div class="container mx-auto p-4 space-y-12">
@@ -38,8 +38,9 @@
 		<h1 class="h1">Le numérique en santé, l'esprit libre</h1>
 		<p class="text-lg max-w-2xl">
 			Nous créons les sites web et les applications des maisons de santé, des CPTS et des
-			organisations de professionnels de santé — pour leurs besoins internes comme pour leur
-			communication externe. Et nous les faisons vivre ensuite.
+			organisations professionnelles du secteur de la santé — syndicats, unions, fédérations —
+			pour leurs besoins internes comme pour leur communication externe. Et nous les faisons
+			vivre ensuite.
 		</p>
 	</header>
 

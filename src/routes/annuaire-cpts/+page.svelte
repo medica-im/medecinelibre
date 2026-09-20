@@ -178,8 +178,9 @@
 			les moteurs de recherche, c'est une page de votre site: même domaine, même navigation.
 		</p>
 		<p>
-			C'est ce que nous avons mis en place pour l'UNIPA avec un site WordPress:
-			<ExternalLink href="https://unipa.fr/annuaire" />. Votre WordPress continue de vivre
+			C'est ce que nous avons mis en place pour l'UNIPA — l'Union Nationale des Infirmiers en
+			Pratique Avancée — sur son site WordPress:
+			<ExternalLink href="https://unipa.fr/annuaire" />. Le WordPress continue de vivre
 			normalement, et l'annuaire est servi sous le même nom de domaine.
 		</p>
 		<p>
@@ -187,6 +188,22 @@
 			socle et par groupe de travail, voyez
 			<a class="anchor" href="/site-internet-cpts">notre offre de site internet pour CPTS</a>:
 			l'annuaire y est intégré.
+		</p>
+	</section>
+
+	<section class="space-y-4">
+		<h2 class="h2">Pas seulement pour les CPTS</h2>
+		<p>
+			Le même annuaire sert d'annuaire des adhérents à une organisation professionnelle —
+			syndicat, union, fédération — qui a besoin de publier ses membres et de leur réserver
+			certaines données. C'est l'usage de l'UNIPA, dont l'annuaire recense les adhérents à
+			l'échelle nationale plutôt que sur un territoire.
+		</p>
+		<p>
+			Les mêmes briques s'appliquent: fiches éditables par les membres eux-mêmes, données
+			réservées aux adhérents ou aux administrateurs, cartographie, sélecteurs et fiches
+			optimisées pour les moteurs de recherche.
+			<a class="anchor" href="/contact">Parlons de votre organisation</a>.
 		</p>
 	</section>
 
