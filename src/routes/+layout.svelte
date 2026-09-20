@@ -26,7 +26,6 @@
 	// Components
 	import MyAppBar from '$lib/components/AppBar/MyAppBar.svelte';
 	import Footer from '$lib/components/Footer/Footer.svelte';
-	import Sidebar from '$lib/components/Sidebar/Sidebar.svelte';
 	import Drawer from '$lib/components/Drawer/Drawer.svelte';
 
 	// Modal Components
@@ -40,16 +39,6 @@
 		modalSearch: { ref: Search }
 	};
 
-	function matchPathWhitelist(pageUrlPath: string): boolean {
-		// If homepage route
-		if (pageUrlPath === '/') return true;
-		// If contact route
-		if (pageUrlPath === '/contact') return true;
-		if (pageUrlPath === '/mentions-legales') return true;
-		// If any blog route
-		if (pageUrlPath.includes('/blog')) return true;
-		return false;
-	}
 
 		// Set body `data-theme` based on current theme status
 		storeTheme.subscribe(setBodyThemeAttribute);
@@ -81,7 +70,6 @@
 	// Current Theme Data
 	$: ({ currentTheme } = data);
 	// Disable left sidebar on homepage
-	$: slotSidebarLeft = matchPathWhitelist(page.url.pathname) ? 'w-0' : 'bg-surface-50-900-token lg:w-auto';
 </script>
 
 <svelte:head>
@@ -118,17 +106,12 @@
 <Drawer />
 
 <!-- App Shell -->
-<AppShell {slotSidebarLeft} regionPage="overflow-y-scroll" slotFooter="bg-black p-4">
+<AppShell regionPage="overflow-y-scroll" slotFooter="bg-black p-4">
 
 		<!-- Header -->
 		<svelte:fragment slot="header">
 			<MyAppBar />
 		</svelte:fragment>
-
-	<!-- Sidebar (Left) -->
-	<svelte:fragment slot="sidebarLeft">
-		<Sidebar class="hidden lg:grid w-[360px] overflow-hidden" />
-	</svelte:fragment>
 
 	<!-- Page Route Content -->
 	<slot />
