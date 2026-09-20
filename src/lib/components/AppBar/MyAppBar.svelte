@@ -136,25 +136,25 @@
 				<nav class="list-nav">
 					<ul>
 						<li>
-							<a href="/pluripro/web">
+							<a href="/annuaire-cpts">
 								<span class="w-6 text-center"><Fa icon={faGlobe} /></span>
-								<span>Pluripro</span>
+								<span>Annuaire CPTS</span>
 							</a>
 						</li>
 						<li>
-							<a href="/pluripro/msp">
-								<span class="w-6 text-center"><Fa icon={faPeopleGroup} /></span>
-								<span>MSP</span>
-							</a>
-						</li>
-						<li>
-							<a href="/pluripro/cpts">
+							<a href="/site-internet-cpts">
 								<span class="w-6 text-center"><Fa icon={faCircleNodes} /></span>
-								<span>CPTS</span>
+								<span>Site internet CPTS</span>
 							</a>
 						</li>
 						<li>
-							<a href="/tele-expertise/doctoctoc">
+							<a href="/site-internet-msp">
+								<span class="w-6 text-center"><Fa icon={faPeopleGroup} /></span>
+								<span>Site internet MSP</span>
+							</a>
+						</li>
+						<li>
+							<a href="/teleexpertise">
 								<span class="w-6 text-center"><Fa icon={faClipboardQuestion} /></span>
 								<span>Télé-expertise</span>
 							</a>

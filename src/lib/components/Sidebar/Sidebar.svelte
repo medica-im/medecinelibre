@@ -29,6 +29,7 @@
 		faPeopleGroup,
 		faGlobe,
 		faClipboardQuestion,
+		faInfo,
 		faBlog
 	} from '@fortawesome/free-solid-svg-icons';
 	const drawerStore = getDrawerStore();
@@ -47,12 +48,18 @@
 		let basePath: string = page.url.pathname.split('/')[1];
 		if (!basePath) return;
 		// Translate base path to link section
-		if (['pluripro', 'msp', 'cpts'].includes(basePath)) currentRailCategory = '/pluripro';
-		if (['tele-expertise'].includes(basePath)) currentRailCategory = '/tele-expertise';
+		// Map a route to its rail section. The landing-page URLs are flat, so
+		// the mapping is explicit rather than derived from a path segment.
+		if (['annuaire-cpts', 'site-internet-cpts'].includes(basePath))
+			currentRailCategory = '/cpts';
+		if (['site-internet-msp'].includes(basePath)) currentRailCategory = '/msp';
+		if (['teleexpertise'].includes(basePath)) currentRailCategory = '/teleexpertise';
+		if (['realisations', 'a-propos', 'contact', 'mentions-legales'].includes(basePath))
+			currentRailCategory = '/entreprise';
 	});
 
 	// Reactive
-	$: submenu = menuNavLinks[currentRailCategory ?? '/pluripro'];
+	$: submenu = menuNavLinks[currentRailCategory ?? '/cpts'];
 	$: listboxItemActive = (href: string) =>
 		$page.url.pathname?.includes(href) ? 'bg-primary-active-token' : '';
 </script>
@@ -70,12 +77,17 @@
 			<span>Accueil</span>
 		</AppRailAnchor>
 		<!-- prettier-ignore -->
-		<AppRailTile bind:group={currentRailCategory} name="pluripro" value={'/pluripro'}>
+		<!-- prettier-ignore -->
+		<AppRailTile bind:group={currentRailCategory} name="cpts" value={'/cpts'}>
 			<svelte:fragment slot="lead"><Fa icon={faGlobe} size="lg" class="inline-block outline-none" /></svelte:fragment>
-			<span>Pluripro</span>
+			<span>CPTS</span>
 		</AppRailTile>
-		<!--hr class="opacity-30" /-->
-		<AppRailTile bind:group={currentRailCategory} name="tele-expertise" value={'/tele-expertise'}>
+		<!-- prettier-ignore -->
+		<AppRailTile bind:group={currentRailCategory} name="msp" value={'/msp'}>
+			<svelte:fragment slot="lead"><Fa icon={faPeopleGroup} size="lg" class="inline-block outline-none" /></svelte:fragment>
+			<span>MSP</span>
+		</AppRailTile>
+		<AppRailTile bind:group={currentRailCategory} name="teleexpertise" value={'/teleexpertise'}>
 			<svelte:fragment slot="lead"
 				><Fa
 					icon={faClipboardQuestion}
@@ -84,6 +96,11 @@
 				/></svelte:fragment
 			>
 			<span>Télé-expertise</span>
+		</AppRailTile>
+		<!-- prettier-ignore -->
+		<AppRailTile bind:group={currentRailCategory} name="entreprise" value={'/entreprise'}>
+			<svelte:fragment slot="lead"><Fa icon={faInfo} size="lg" class="inline-block outline-none" /></svelte:fragment>
+			<span>Entreprise</span>
 		</AppRailTile>
 		<AppRailAnchor
 			href="/blog"

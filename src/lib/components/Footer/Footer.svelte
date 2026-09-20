@@ -44,16 +44,18 @@
 				<div class="space-y-6">
 					<h6 class="h6">Services</h6>
 					<ul class="space-y-3">
-						<li><a class="anchor" href="/pluripro/web">Pluripro web</a></li>
-						<li><a class="anchor" href="/pluripro/msp">MSP</a></li>
-						<li><a class="anchor" href="/pluripro/cpts">CPTS</a></li>
-						<li><a class="anchor" href="/tele-expertise/doctoctoc">Télé-expertise</a></li>
+						<li><a class="anchor" href="/annuaire-cpts">Annuaire CPTS</a></li>
+						<li><a class="anchor" href="/site-internet-cpts">Site internet CPTS</a></li>
+						<li><a class="anchor" href="/site-internet-msp">Site internet MSP</a></li>
+						<li><a class="anchor" href="/teleexpertise">Télé-expertise</a></li>
 					</ul>
 				</div>
 				<div class="space-y-6">
 					<h6 class="h6">Navigation</h6>
 					<ul class="space-y-3">
 						<li><a class="anchor" href="/">Accueil</a></li>
+						<li><a class="anchor" href="/realisations">Réalisations</a></li>
+						<li><a class="anchor" href="/a-propos">À propos</a></li>
 						<li><a class="anchor" href="/blog">Blog</a></li>
 						<li><a class="anchor" href="/contact">Contact</a></li>
 						<li><a class="anchor" href="/mentions-legales">Mentions légales</a></li>

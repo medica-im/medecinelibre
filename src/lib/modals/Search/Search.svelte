@@ -14,7 +14,12 @@
 
 	// Local
 	let searchTerm = '';
-	let resultsCopy = [...menuNavLinks['/pluripro'], ...menuNavLinks['/tele-expertise']];
+	let resultsCopy = [
+		...menuNavLinks['/cpts'],
+		...menuNavLinks['/msp'],
+		...menuNavLinks['/teleexpertise'],
+		...menuNavLinks['/entreprise']
+	];
 	let results = resultsCopy;
 
 	// Elements

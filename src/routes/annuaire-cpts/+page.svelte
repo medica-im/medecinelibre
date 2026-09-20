@@ -143,7 +143,7 @@
 		<ul class="list space-y-2">
 			{#each [
 				'annuaire des membres modifiable par le coordinateur ou par les membres eux-mêmes',
-				'cartographie des membres, de leurs sites et de leurs établissements',
+				'cartographie des membres et de leurs établissements',
 				'page détaillée dédiée à chaque membre, avec sa propre adresse web',
 				'accès intranet: certaines données réservées aux membres ou aux administrateurs',
 				'sélecteurs par catégorie, commune, établissement, situation et nom',

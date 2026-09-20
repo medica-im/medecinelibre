@@ -1,4 +1,5 @@
 import { NOINDEX } from '$lib/noindex';
+import { PUBLIC_SITE_URL } from '$lib/site';
 
 /**
  * robots.txt, generated from the environment rather than shipped as a file.
@@ -22,8 +23,9 @@ export function GET() {
 	const body = NOINDEX
 		? // dev / staging: stay out entirely.
 			'User-agent: *\nDisallow: /\n'
-		: // production: an empty Disallow is the explicit "crawl everything".
-			'User-agent: *\nDisallow:\n';
+		: // production: an empty Disallow is the explicit "crawl everything",
+			// plus the sitemap so a crawler finds every page without guessing.
+			`User-agent: *\nDisallow:\n\nSitemap: ${new URL('/sitemap.xml', PUBLIC_SITE_URL).href}\n`;
 
 	return new Response(body, {
 		headers: {

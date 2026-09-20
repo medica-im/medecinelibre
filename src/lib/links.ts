@@ -22,21 +22,54 @@ import {
 
 export type List = Array<{ href: string; label: string; keywords: string; badge?: string }>;
 export const menuNavLinks: Record<string, Array<{ title: string; list: List }>> = {
-	'/pluripro': [
+	'/cpts': [
 		{
-			title: 'Pluripro web',
+			title: 'CPTS',
 			list: [
-				{ href: '/pluripro/web', label: 'Introduction', keywords: 'pluripro, msp, cpts' },
-                { href: '/pluripro/msp', label: 'MSP', keywords: 'theme, customize, fonts, gradient, background' },
-                { href: '/pluripro/cpts', label: 'CPTS', keywords: 'create, custom, style, css, design' }
+				{
+					href: '/annuaire-cpts',
+					label: 'Annuaire & intranet',
+					keywords: 'annuaire, cpts, intranet, cartographie, parcours de soins'
+				},
+				{
+					href: '/site-internet-cpts',
+					label: 'Site internet',
+					keywords: 'site, web, cpts, mission socle, groupe de travail'
+				}
 			]
 		}
 	],
-	'/tele-expertise': [
+	'/msp': [
+		{
+			title: 'MSP & centres de santé',
+			list: [
+				{
+					href: '/site-internet-msp',
+					label: 'Site internet',
+					keywords: 'site, web, msp, maison de santé, centre de santé, cabinet de groupe'
+				}
+			]
+		}
+	],
+	'/teleexpertise': [
 		{
 			title: 'Télé-expertise',
 			list: [
-				{ href: '/tele-expertise/doctoctoc', label: 'DocTocToc', keywords: 'TLE, télé-expertise' }
+				{
+					href: '/teleexpertise',
+					label: 'SantéTocToc',
+					keywords: 'TLE, télé-expertise, doctoctoc'
+				}
+			]
+		}
+	],
+	'/entreprise': [
+		{
+			title: 'Médecine Libre',
+			list: [
+				{ href: '/realisations', label: 'Réalisations', keywords: 'clients, exemples, références' },
+				{ href: '/a-propos', label: 'À propos', keywords: 'entreprise, parcours, équipe' },
+				{ href: '/contact', label: 'Contact', keywords: 'devis, téléphone, mail' }
 			]
 		}
 	]
