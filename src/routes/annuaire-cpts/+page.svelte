@@ -2,6 +2,7 @@
 	import Seo from '$lib/components/Seo/Seo.svelte';
 	import Fa from 'svelte-fa';
 	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
+	import YouTube from '$lib/components/Video/YouTube.svelte';
 	import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
 	/**
@@ -114,6 +115,15 @@
 			administrateurs), elle pourra accéder directement à sa propre fiche, la compléter et la
 			mettre à jour elle-même. Chaque professionnel devient acteur de la communauté.
 		</p>
+		<p>
+			Voici ce que voit un professionnel qui met sa fiche à jour — photo, coordonnées, horaires
+			— sans formation ni intervention de notre part:
+		</p>
+		<YouTube
+			id="WWhcxm2aEdk"
+			title="Annuaire CPTS/MSP: comment éditer votre fiche, ajouter une photo et vos coordonnées"
+			description="Tutoriel: comment un professionnel de santé met à jour sa propre fiche dans l'annuaire d'une CPTS ou d'une MSP — photo, coordonnées et informations pratiques."
+		/>
 	</section>
 
 	<section class="space-y-4">
