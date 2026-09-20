@@ -121,8 +121,8 @@
 			la communauté.
 		</p>
 		<p>
-			Voici ce que voit un professionnel qui met sa fiche à jour — photo, coordonnées, horaires
-			— sans formation ni intervention de notre part:
+			Voici ce que voit un professionnel qui met sa fiche à jour — photo, coordonnées,
+			horaires — sans intervention de notre part:
 		</p>
 		<YouTube
 			id="WWhcxm2aEdk"
