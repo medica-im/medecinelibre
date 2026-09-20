@@ -96,7 +96,7 @@ export const realisations: Realisation[] = [
 	{
 		slug: 'msp-vedene',
 		name: 'MSP de Vedène',
-		kind: 'Site et outil ateliers',
+		kind: 'Site internet MSP multi-sites',
 		url: 'https://msp-vedene.fr',
 		summary:
 			"Site web et outil de gestion des ateliers d'éducation en santé et d'éducation thérapeutique pour une MSP multisite de plus de 40 professionnels."

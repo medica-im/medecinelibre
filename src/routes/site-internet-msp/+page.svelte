@@ -121,9 +121,7 @@
 			{#each preventionLinks as link}
 				<li>
 					<span class="text-primary-500"><Fa icon={faSquareCheck} /></span>
-					<a class="anchor" href={link.href} target="_blank" rel="noopener noreferrer">
-						{link.label}
-					</a>
+					<ExternalLink href={link.href} label={link.label} />
 				</li>
 			{/each}
 		</ul>

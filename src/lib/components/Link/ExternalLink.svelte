@@ -5,11 +5,15 @@
 	/**
 	 * An outbound link with its "leaves the site" icon.
 	 *
-	 * The icon is glued to the last word rather than left as a separate inline
-	 * element: written out longhand, the newlines inside the <a> become break
-	 * opportunities, so the icon would wrap onto a line of its own whenever the
-	 * link fell near the end of a line. The nowrap span keeps the final word and
-	 * the icon together while still letting the rest of the label wrap normally.
+	 * Two things keep the icon on the same line as the text:
+	 *
+	 * 1. Tailwind's preflight sets `svg { display: block }`, which turns every
+	 *    icon into a block-level box that takes a line of its own. The icon
+	 *    must be forced back to inline-block — nowrap cannot save a block.
+	 * 2. Even inline, the newlines around it inside the <a> are break
+	 *    opportunities. The label's last word and the icon are wrapped in a
+	 *    nowrap span joined by a non-breaking space, so only that pair is
+	 *    glued; the rest of the label still wraps normally.
 	 */
 	interface Props {
 		href: string;
@@ -27,7 +31,17 @@
 </script>
 
 <a class={klass} {href} target="_blank" rel="noopener noreferrer">{head}<span
-		class="whitespace-nowrap">{tail}&nbsp;<Fa
-			icon={faArrowUpRightFromSquare}
-			class="text-xs align-baseline"
-		/></span></a>
+		class="external-tail">{tail}&nbsp;<Fa icon={faArrowUpRightFromSquare} class="external-icon" /></span
+	></a>
+
+<style lang="postcss">
+	.external-tail {
+		white-space: nowrap;
+	}
+	/* Undo Tailwind preflight's `svg { display: block }` for this icon only. */
+	.external-tail :global(svg.external-icon) {
+		display: inline-block;
+		font-size: 0.75em;
+		vertical-align: baseline;
+	}
+</style>
