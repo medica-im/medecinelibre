@@ -30,9 +30,16 @@
 	const tail = $derived(head ? text.slice(head.length) : text);
 </script>
 
-<a class={klass} {href} target="_blank" rel="noopener noreferrer">{head}<span
-		class="external-tail">{tail}&nbsp;<Fa icon={faArrowUpRightFromSquare} class="external-icon" /></span
-	></a>
+<!-- The label is wrapped in one span so the <a> has a single child. Buttons
+     (.btn) are inline-flex, which turns loose text into its own flex item and
+     drops the space at its edge: "Voir le site de la CPTS" + "Lyon 3ème" would
+     render as "CPTSLyon". Inside one inline span, whitespace behaves normally. -->
+<a class={klass} {href} target="_blank" rel="noopener noreferrer"
+	><span>{head}<span class="external-tail"
+			>{tail}&nbsp;<Fa icon={faArrowUpRightFromSquare} class="external-icon" /></span
+		></span
+	></a
+>
 
 <style lang="postcss">
 	.external-tail {
