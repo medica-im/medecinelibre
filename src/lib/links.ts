@@ -51,6 +51,18 @@ export const menuNavLinks: Record<string, Array<{ title: string; list: List }>> 
 			]
 		}
 	],
+	'/organisations': [
+		{
+			title: 'Organisations professionnelles',
+			list: [
+				{
+					href: '/annuaire-adherents',
+					label: 'Annuaire des adhérents',
+					keywords: 'annuaire, adhérents, syndicat, union, fédération, wordpress'
+				}
+			]
+		}
+	],
 	'/teleexpertise': [
 		{
 			title: 'Télé-expertise',

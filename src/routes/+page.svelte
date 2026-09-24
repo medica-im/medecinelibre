@@ -10,7 +10,8 @@
 		faComments,
 		faPenToSquare,
 		faScrewdriverWrench,
-		faBullhorn
+		faBullhorn,
+		faBuildingColumns
 	} from '@fortawesome/free-solid-svg-icons';
 	import { offers, realisations } from '$lib/content/offers';
 	import { PUBLIC_SITE_URL, SITE_NAME } from '$lib/site';
@@ -57,6 +58,7 @@
 		'/annuaire-cpts': faAddressBook,
 		'/site-internet-cpts': faCircleNodes,
 		'/site-internet-msp': faPeopleGroup,
+		'/annuaire-adherents': faBuildingColumns,
 		'/teleexpertise': faComments
 	};
 </script>
@@ -92,7 +94,7 @@
 	<section class="space-y-6">
 		<h2 class="h2 text-center">Que cherchez-vous?</h2>
 		<div class="grid gap-4 md:grid-cols-2">
-			{#each offers as offer}
+			{#each offers.filter((o) => o.href !== '/teleexpertise') as offer}
 				<a
 					class="card card-hover variant-ghost p-6 space-y-3 block"
 					href={offer.href}
@@ -107,6 +109,10 @@
 				</a>
 			{/each}
 		</div>
+		<p class="text-center text-sm">
+			Professionnel de santé à titre individuel? Découvrez
+			<a class="anchor" href="/teleexpertise">SantéTocToc, notre réseau de télé-expertise</a>.
+		</p>
 	</section>
 
 	<!-- The differentiator: most agencies deliver and leave. Placed right after

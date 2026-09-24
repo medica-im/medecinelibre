@@ -17,6 +17,7 @@
 	let resultsCopy = [
 		...menuNavLinks['/cpts'],
 		...menuNavLinks['/msp'],
+		...menuNavLinks['/organisations'],
 		...menuNavLinks['/teleexpertise'],
 		...menuNavLinks['/entreprise']
 	];

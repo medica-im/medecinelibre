@@ -211,16 +211,10 @@
 	<section class="space-y-4">
 		<h2 class="h2">Pas seulement pour les CPTS</h2>
 		<p>
-			Le même annuaire sert d'annuaire des adhérents à une organisation professionnelle —
-			syndicat, union, fédération — qui a besoin de publier ses membres et de leur réserver
-			certaines données. C'est l'usage de l'UNIPA, dont l'annuaire recense les adhérents à
-			l'échelle nationale plutôt que sur un territoire.
-		</p>
-		<p>
-			Les mêmes briques s'appliquent: fiches éditables par les membres eux-mêmes, données
-			réservées aux adhérents ou aux administrateurs, cartographie, sélecteurs et fiches
-			optimisées pour les moteurs de recherche.
-			<a class="anchor" href="/contact">Parlons de votre organisation</a>.
+			Le même annuaire sert d'annuaire des adhérents aux syndicats, unions et fédérations du
+			secteur de la santé, comme celui de l'UNIPA:
+			<a class="anchor" href="/annuaire-adherents">annuaire des adhérents pour organisations
+				professionnelles</a>.
 		</p>
 	</section>
 

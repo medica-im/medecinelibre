@@ -23,6 +23,7 @@
 	import {
 		faScaleBalanced,
 		faCircleNodes,
+		faBuildingColumns,
 		faBars,
 		faCaretDown,
 		faHome,
@@ -151,6 +152,12 @@
 							<a href="/site-internet-msp">
 								<span class="w-6 text-center"><Fa icon={faPeopleGroup} /></span>
 								<span>Site internet MSP</span>
+							</a>
+						</li>
+						<li>
+							<a href="/annuaire-adherents">
+								<span class="w-6 text-center"><Fa icon={faBuildingColumns} /></span>
+								<span>Organisations professionnelles</span>
 							</a>
 						</li>
 						<li>

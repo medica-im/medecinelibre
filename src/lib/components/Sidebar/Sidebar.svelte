@@ -29,6 +29,7 @@
 		faPeopleGroup,
 		faClipboardQuestion,
 		faInfo,
+		faBuildingColumns,
 		faBlog
 	} from '@fortawesome/free-solid-svg-icons';
 	const drawerStore = getDrawerStore();
@@ -52,6 +53,7 @@
 		if (['annuaire-cpts', 'site-internet-cpts'].includes(basePath))
 			currentRailCategory = '/cpts';
 		if (['site-internet-msp'].includes(basePath)) currentRailCategory = '/msp';
+		if (['annuaire-adherents'].includes(basePath)) currentRailCategory = '/organisations';
 		if (['teleexpertise'].includes(basePath)) currentRailCategory = '/teleexpertise';
 		if (['realisations', 'a-propos', 'contact', 'mentions-legales'].includes(basePath))
 			currentRailCategory = '/entreprise';
@@ -85,6 +87,11 @@
 		<AppRailTile bind:group={currentRailCategory} name="msp" value={'/msp'}>
 			<svelte:fragment slot="lead"><Fa icon={faPeopleGroup} size="lg" class="inline-block outline-none" /></svelte:fragment>
 			<span>MSP</span>
+		</AppRailTile>
+		<!-- prettier-ignore -->
+		<AppRailTile bind:group={currentRailCategory} name="organisations" value={'/organisations'}>
+			<svelte:fragment slot="lead"><Fa icon={faBuildingColumns} size="lg" class="inline-block outline-none" /></svelte:fragment>
+			<span>Organisations</span>
 		</AppRailTile>
 		<AppRailTile bind:group={currentRailCategory} name="teleexpertise" value={'/teleexpertise'}>
 			<svelte:fragment slot="lead"

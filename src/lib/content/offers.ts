@@ -42,6 +42,14 @@ export const offers: Offer[] = [
 		audience: 'MSP, centres de santé, cabinets de groupe'
 	},
 	{
+		href: '/annuaire-adherents',
+		label: 'Organisations professionnelles',
+		heading: 'Annuaire des adhérents pour organisations professionnelles de santé',
+		pitch:
+			"L'annuaire de vos adhérents intégré à votre site, WordPress compris: fiches tenues à jour par les membres, données réservées aux adhérents.",
+		audience: 'Syndicats, unions, fédérations du secteur de la santé'
+	},
+	{
 		href: '/teleexpertise',
 		label: 'Télé-expertise',
 		heading: 'Télé-expertise interprofessionnelle',

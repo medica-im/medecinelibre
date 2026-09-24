@@ -47,6 +47,7 @@
 						<li><a class="anchor" href="/annuaire-cpts">Annuaire CPTS</a></li>
 						<li><a class="anchor" href="/site-internet-cpts">Site internet CPTS</a></li>
 						<li><a class="anchor" href="/site-internet-msp">Site internet MSP</a></li>
+						<li><a class="anchor" href="/annuaire-adherents">Organisations professionnelles</a></li>
 						<li><a class="anchor" href="/teleexpertise">Télé-expertise</a></li>
 					</ul>
 				</div>
