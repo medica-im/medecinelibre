@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Seo from '$lib/components/Seo/Seo.svelte';
 	import Fa from 'svelte-fa';
 	import {
 		faTwitter,
@@ -30,11 +31,10 @@
 	import { page } from '$app/stores';
 </script>
 
-<svelte:head>
-	<title>
-		Mentions légales - {import.meta.env.VITE_SITE_TITLE}
-	</title>
-</svelte:head>
+<Seo
+	title="Mentions légales"
+	description="Mentions légales du site medecinelibre.com: éditeur, coordonnées et hébergeur."
+/>
 
 <div class="container mx-auto p-4 space-y-8">
 	<header>

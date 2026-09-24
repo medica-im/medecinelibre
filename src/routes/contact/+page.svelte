@@ -1,4 +1,5 @@
 <script lang='ts'>
+	import Seo from '$lib/components/Seo/Seo.svelte';
 		import Fa from 'svelte-fa';
 	import {
 		faTwitter,
@@ -26,11 +27,10 @@
 	} from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<svelte:head>
-		<title>
-			Contact - {import.meta.env.VITE_SITE_TITLE}
-		</title>
-</svelte:head>
+<Seo
+	title="Contact: devis pour votre site ou annuaire de santé"
+	description="Contactez Médecine Libre pour le site internet ou l'annuaire de votre MSP, de votre CPTS ou de votre organisation professionnelle. Devis gratuit, par téléphone ou par mail."
+/>
 
 <div class="container mx-auto p-4 space-y-4">
 	<header>

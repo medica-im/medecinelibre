@@ -1,8 +1,8 @@
 /**
  * Whether this build should ask search engines to stay away.
  *
- * Read via import.meta.env, matching VITE_SITE_TITLE elsewhere in this repo
- * and VITE_NOINDEX in clinic-cms/skcms — one mechanism across both projects.
+ * Read via import.meta.env, matching VITE_NOINDEX in clinic-cms/skcms — one
+ * mechanism across both projects.
  *
  * Compiled in at build time, so which .env the image was built against
  * decides it. See the ENV_FILE note in the Dockerfile: a production image
