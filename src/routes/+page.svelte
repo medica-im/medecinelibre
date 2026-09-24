@@ -10,12 +10,46 @@
 		faComments
 	} from '@fortawesome/free-solid-svg-icons';
 	import { offers, realisations } from '$lib/content/offers';
+	import { PUBLIC_SITE_URL, SITE_NAME } from '$lib/site';
 
 	/**
 	 * The homepage routes visitors by audience. The cards are navigation to
 	 * the landing pages that will actually rank — they do not try to sell the
 	 * offers themselves, or they would compete with those pages.
 	 */
+	/**
+	 * Organization structured data, on the homepage only, as Google recommends.
+	 * Every value is one the site already publishes: phone from /contact,
+	 * address from /mentions-legales, founding year and founder from
+	 * /a-propos. LinkedIn is left out of sameAs until we know which of the two
+	 * profile URLs used across the site is the right one.
+	 */
+	const organization = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		name: SITE_NAME,
+		url: PUBLIC_SITE_URL,
+		logo: new URL('/google-touch-icon.png', PUBLIC_SITE_URL).href,
+		description:
+			'Sites web et applications pour les MSP, les CPTS et les organisations professionnelles du secteur de la santé.',
+		telephone: '+33356894550',
+		foundingDate: '2012',
+		founder: { '@type': 'Person', name: 'Jérôme Pinguet', jobTitle: 'Médecin généraliste' },
+		address: {
+			'@type': 'PostalAddress',
+			streetAddress: '66 rue de Dunkerque',
+			postalCode: '59280',
+			addressLocality: 'Armentières',
+			addressCountry: 'FR'
+		},
+		sameAs: [
+			'https://bsky.app/profile/medecinelibre.bsky.social',
+			'https://mastodon.medica.im/@medecinelibre',
+			'https://twitter.com/MedecineLibre',
+			'https://www.youtube.com/@medecinelibre'
+		]
+	});
+
 	const icons: Record<string, typeof faCircleNodes> = {
 		'/annuaire-cpts': faAddressBook,
 		'/site-internet-cpts': faCircleNodes,
@@ -23,6 +57,10 @@
 		'/teleexpertise': faComments
 	};
 </script>
+
+<svelte:head>
+	{@html `<script type="application/ld+json">${organization}</script>`}
+</svelte:head>
 
 <Seo
 	title="Sites et applications web pour MSP, CPTS et organisations de santé"
