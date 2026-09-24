@@ -7,7 +7,10 @@
 		faCircleNodes,
 		faPeopleGroup,
 		faAddressBook,
-		faComments
+		faComments,
+		faPenToSquare,
+		faScrewdriverWrench,
+		faBullhorn
 	} from '@fortawesome/free-solid-svg-icons';
 	import { offers, realisations } from '$lib/content/offers';
 	import { PUBLIC_SITE_URL, SITE_NAME } from '$lib/site';
@@ -102,6 +105,46 @@
 					<p class="text-sm opacity-75">{offer.audience}</p>
 					<p>{offer.pitch}</p>
 				</a>
+			{/each}
+		</div>
+	</section>
+
+	<!-- The differentiator: most agencies deliver and leave. Placed right after
+	     the offers, where the visitor's next question is "and after launch?".
+	     Each claim comes from the prospection emails or /a-propos. -->
+	<section class="space-y-6">
+		<div class="text-center space-y-2">
+			<h2 class="h2">Un accompagnement sur le long terme</h2>
+			<p class="prose-measure">
+				Un site ou une application n'est utile que s'il vit. Nous restons à vos côtés après la
+				mise en ligne.
+			</p>
+		</div>
+		<div class="grid gap-4 md:grid-cols-3">
+			{#each [
+				{
+					icon: faPenToSquare,
+					title: 'Des contenus à jour',
+					text: 'Chaque mois, nous rédigeons avec vous un billet de blog, mettons à jour vos pages et en créons de nouvelles pour accompagner vos projets.'
+				},
+				{
+					icon: faScrewdriverWrench,
+					title: 'Des outils qui évoluent',
+					text: 'Nous concevons et codons nos outils de A à Z: nous corrigeons vite et ajoutons les fonctionnalités dont votre équipe a besoin.'
+				},
+				{
+					icon: faBullhorn,
+					title: 'Conseil en communication',
+					text: 'Communication interne avec vos membres ou adhérents, communication externe vers les patients et vos partenaires: nous vous aidons à choisir quoi publier, pour qui et à quel rythme.'
+				}
+			] as item}
+				<div class="card variant-ghost p-6 space-y-3">
+					<div class="flex items-center gap-3">
+						<span class="text-primary-500 text-2xl"><Fa icon={item.icon} /></span>
+						<h3 class="h4">{item.title}</h3>
+					</div>
+					<p>{item.text}</p>
+				</div>
 			{/each}
 		</div>
 	</section>

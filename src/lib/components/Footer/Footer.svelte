@@ -35,7 +35,7 @@
 					<h3 class="h3">Médecine Libre</h3>
 				</div>
 				<div>
-					<p class="!text-sm opacity-80">Applications & sites web pour la santé pluripro.</p>
+					<p class="!text-sm opacity-80">Sites et applications web pour les organisations de santé.</p>
 				</div>
 				<a href="tel:+33356894550"><div class="flex space-x-2 items-center"><span><Fa icon={faPhone} size="xs"/></span><span>0356894550</span></div></a>
 				
