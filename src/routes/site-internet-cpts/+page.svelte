@@ -4,6 +4,9 @@
 	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
 	import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
+	const groupe = '/images/offres/cpts_lyon3_groupe_sante_mentale.webp';
+	const accueil = '/images/offres/cpts_lyon3_accueil.webp';
+
 	/**
 	 * Sells the full website package. The annuaire is part of it, but gets two
 	 * sentences and a link to /annuaire-cpts rather than a repeat of its
@@ -13,6 +16,7 @@
 
 <Seo
 	title="Site internet pour CPTS: site web complet et outil de pilotage"
+	image="/images/offres/cpts_lyon3_accueil.jpg"
 	description="Création du site internet de votre CPTS: une page par mission socle, une page par groupe de travail, espace membres, annuaire intégré et mises à jour en continu."
 />
 
@@ -35,6 +39,20 @@
 
 	<section class="space-y-4">
 		<h2 class="h2">Une page par mission socle, une page par groupe de travail</h2>
+		<figure class="space-y-2">
+			<img
+				class="rounded-container-token w-full border border-surface-500/20"
+				src={groupe}
+				width="1280"
+				height="900"
+				alt="Page du groupe de travail Santé mentale sur le site de la CPTS Lyon 3ème: annuaire et télé-expertise réservés aux membres, convention avec l'hôpital"
+				loading="lazy"
+			/>
+			<figcaption class="text-center text-sm opacity-75">
+				Le groupe de travail Santé mentale de la CPTS Lyon 3ème: ressources réservées aux
+				membres connectés, convention avec l'hôpital du Vinatier.
+			</figcaption>
+		</figure>
 		<p>
 			Nous créons une page dédiée à chacune des quatre missions socles — accès aux soins,
 			parcours pluriprofessionnels, prévention, qualité et pertinence des soins — ainsi qu'une
@@ -81,6 +99,20 @@
 
 	<section class="card variant-ghost p-6 space-y-4">
 		<h2 class="h2">Annuaire intégré</h2>
+		<figure class="space-y-2">
+			<img
+				class="rounded-container-token w-full border border-surface-500/20"
+				src={accueil}
+				width="1280"
+				height="900"
+				alt="Page d'accueil du site de la CPTS Lyon 3ème: membres de la communauté par profession et accès à l'annuaire"
+				loading="lazy"
+			/>
+			<figcaption class="text-center text-sm opacity-75">
+				Page d'accueil de la CPTS Lyon 3ème: la communauté par profession, un clic vers
+				l'annuaire.
+			</figcaption>
+		</figure>
 		<p>
 			Le site inclut l'annuaire des professionnels du territoire, avec cartographie et accès
 			intranet. C'est la même application que celle que nous vendons séparément.
