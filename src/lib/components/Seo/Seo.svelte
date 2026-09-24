@@ -23,7 +23,7 @@
 
 	const canonical = $derived(new URL(page.url.pathname, PUBLIC_SITE_URL).href);
 	const ogImage = $derived(
-		new URL(image || '/images/offres/email_msp_v2.jpg', PUBLIC_SITE_URL).href
+		new URL(image || '/images/og-default.jpg', PUBLIC_SITE_URL).href
 	);
 	// The tab shows the page's own name; the brand is appended once. The old
 	// pages appended an undefined VITE_SITE_TITLE, rendering a bare "- ".
