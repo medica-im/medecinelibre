@@ -11,11 +11,11 @@
 	 * repeating each other would compete for the same queries and rank for
 	 * neither. The link between them is one sentence each way.
 	 */
-	const liste = '/images/offres/annuaire_cpts_liste_1.png';
-	const carte = '/images/offres/annuaire_cpts_carte_2.jpg';
-	const entree = '/images/offres/annuaire_cpts_entree_6.jpg';
-	const creation = '/images/offres/annuaire_cpts_creation_fiche_4.png';
-	const situation = '/images/offres/annuaire_cpts_situation_3.png';
+	const liste = '/images/offres/annuaire_cpts_liste_1.webp';
+	const carte = '/images/offres/annuaire_cpts_carte_2.webp';
+	const entree = '/images/offres/annuaire_cpts_entree_6.webp';
+	const creation = '/images/offres/annuaire_cpts_creation_fiche_4.webp';
+	const situation = '/images/offres/annuaire_cpts_situation_3.webp';
 </script>
 
 <Seo

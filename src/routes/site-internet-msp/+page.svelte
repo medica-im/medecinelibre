@@ -4,10 +4,10 @@
 	import ExternalLink from '$lib/components/Link/ExternalLink.svelte';
 	import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
-	const accueil = '/images/offres/accueil_msp_v2.jpg';
-	const annuaireMobile = '/images/offres/annuaire_mobile_msp.jpg';
-	const multiSites = '/images/offres/msp_multi_sites_v2.jpg';
-	const siteDetail = '/images/offres/msp_site_v2.jpg';
+	const accueil = '/images/offres/accueil_msp_v2.webp';
+	const annuaireMobile = '/images/offres/annuaire_mobile_msp.webp';
+	const multiSites = '/images/offres/msp_multi_sites_v2.webp';
+	const siteDetail = '/images/offres/msp_site_v2.webp';
 
 	const preventionLinks = [
 		{ href: 'https://sante-gadagne.fr/prevention/vaccins', label: 'Vaccination' },
