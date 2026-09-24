@@ -39,12 +39,15 @@ body {
 	line-height: 1.65;
 }
 
-/* Long-form paragraphs get a comfortable measure: wider than this and the eye
-   loses the line start on a large monitor. margin-inline:auto is required, not
-   cosmetic — a max-width with no margin pins the box hard left, so a centred
-   paragraph ends up centred *inside a left-aligned box* and reads off-centre
-   on a wide screen. */
-.container p {
+/* Long-form paragraphs get a comfortable measure: past ~68 characters the eye
+   loses the line start on a large monitor. margin-inline:auto goes with it —
+   a max-width with no margin pins the box hard left, so a centred paragraph
+   would read off-centre on a wide screen.
+   Opt in with .prose-measure rather than styling every `.container p`: that
+   caught paragraphs inside cards, where 68ch is wider than the card's text
+   column, squeezing and re-centring them so they no longer lined up with the
+   heading above. */
+.prose-measure {
 	max-width: 68ch;
 	margin-inline: auto;
 }
