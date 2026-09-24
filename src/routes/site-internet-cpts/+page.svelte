@@ -68,7 +68,7 @@
 				'blog et actualités, rédigés avec vous chaque mois',
 				'agenda des réunions et des actions',
 				'annuaire des membres intégré',
-				'hébergement, nom de domaine, sauvegardes et mises à jour',
+				'hébergement dans l’Union européenne, nom de domaine, sauvegardes et mises à jour',
 				'conseil et accompagnement sur votre communication interne et externe'
 			] as item}
 				<li>

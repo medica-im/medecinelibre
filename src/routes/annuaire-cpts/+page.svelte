@@ -53,6 +53,7 @@
 			La CPTS et les membres créent et mettent à jour les fiches. L'accès à certaines données
 			(téléphone, mail, site web, réseaux sociaux) peut être réservé aux membres de la CPTS ou
 			aux administrateurs: un même annuaire sert le grand public et vos échanges internes.
+			Toutes les données sont hébergées dans l'Union européenne.
 		</p>
 		<p>
 			La page d'accueil liste toutes les fiches synthétiques. De nombreux sélecteurs permettent
@@ -164,7 +165,7 @@
 				'accès intranet: certaines données réservées aux membres ou aux administrateurs',
 				'sélecteurs par catégorie, commune, établissement, situation et nom',
 				"sélecteur de situations pour l'aide aux parcours de soins",
-				'hébergement, sauvegardes et mises à jour assurés par nos soins'
+				'hébergement dans l’Union européenne, sauvegardes et mises à jour assurés par nos soins'
 			] as item}
 				<li>
 					<span class="text-primary-500"><Fa icon={faSquareCheck} /></span>

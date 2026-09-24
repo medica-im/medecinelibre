@@ -136,7 +136,7 @@
 				'pages prévention, éducation en santé et éducation thérapeutique',
 				'blog et actualités, rédigés avec vous chaque mois',
 				'outils collaboratifs accessibles aux membres après connexion',
-				'hébergement, nom de domaine, sauvegardes et mises à jour',
+				'hébergement dans l’Union européenne, nom de domaine, sauvegardes et mises à jour',
 				'conseil et accompagnement sur votre communication interne et externe'
 			] as item}
 				<li>
