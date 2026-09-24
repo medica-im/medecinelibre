@@ -21,7 +21,6 @@
 <Seo
 	title="Annuaire CPTS: logiciel annuaire et intranet pour votre territoire"
 	description="Logiciel d'annuaire pour CPTS: fiches des professionnels de santé du territoire, cartographie, accès intranet réservé aux membres et aide aux parcours de soins. Démo gratuite."
-	image="/images/offres/annuaire_cpts_liste_1.png"
 />
 
 <div class="container max-w-3xl mx-auto p-4 space-y-10">

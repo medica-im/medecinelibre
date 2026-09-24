@@ -6,7 +6,6 @@
 <Seo
 	title="Démo annuaire CPTS: testez gratuitement le bac à sable"
 	description="Testez l'annuaire CPTS sur le site de la CPTS Virtuelle: ajoutez, modifiez et supprimez des entrées. Connexion avec un compte Google existant, gratuit et sans engagement."
-	image="/images/offres/annuaire_cpts_liste_1.png"
 />
 
 <div class="container max-w-3xl mx-auto p-4 space-y-8">

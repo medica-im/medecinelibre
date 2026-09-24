@@ -33,7 +33,7 @@
 <Seo
 	title="Site internet pour MSP, centre de santé et cabinet de groupe"
 	description="Création du site internet de votre maison de santé pluriprofessionnelle: annuaire de l'équipe, pages établissements multi-sites, prévention et éducation thérapeutique, mises à jour mensuelles."
-	image="/images/offres/accueil_msp_v2.jpg"
+	image="/images/offres/accueil_msp_og.jpg"
 />
 
 <div class="container max-w-3xl mx-auto p-4 space-y-10">

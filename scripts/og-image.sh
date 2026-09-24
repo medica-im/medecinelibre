@@ -39,6 +39,9 @@ sed -e 's/class="fill-token"/fill="#ffffff"/' \
     src/lib/components/Logos/LogoFull.svelte > "$TMP/logo.svg"
 ffmpeg -hide_banner -loglevel error -y -i "$TMP/logo.svg" "$TMP/logo.png"
 
+# Saved as 4:4:4 JPEG at top quality: the default 4:2:0 subsampling halves
+# colour resolution, softening white-on-blue text edges before LinkedIn
+# recompresses the image again.
 # Quicksand renders in its light weight; a 1-2px same-colour border thickens
 # the strokes so the text stays legible when the card is shrunk to ~550px.
 ffmpeg -hide_banner -loglevel error -y -i "$BG" -i "$TMP/logo.png" -filter_complex "\
@@ -49,6 +52,6 @@ drawbox=x=(iw-140)/2:y=352:w=140:h=4:color=white@0.6:t=fill,\
 drawtext=fontfile=$FONT:textfile=$TMP/l1.txt:fontsize=50:fontcolor=white:borderw=1:bordercolor=white:x=(w-text_w)/2:y=390,\
 drawtext=fontfile=$FONT:textfile=$TMP/l2.txt:fontsize=42:fontcolor=white@0.9:borderw=1:bordercolor=white@0.9:x=(w-text_w)/2:y=458,\
 drawtext=fontfile=$FONT:textfile=$TMP/url.txt:fontsize=30:fontcolor=white@0.75:x=(w-text_w)/2:y=560" \
-    -frames:v 1 -q:v 2 "$OUT"
+    -frames:v 1 -q:v 1 -pix_fmt yuvj444p "$OUT"
 
 ok "wrote $OUT ($(( $(stat -c%s "$OUT") / 1024 )) KB)"

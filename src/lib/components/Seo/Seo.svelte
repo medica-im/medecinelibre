@@ -14,7 +14,11 @@
 	interface Props {
 		title: string;
 		description: string;
-		/** Social preview image under /images/, or omitted for the default. */
+		/**
+		 * Social preview image, or omitted for the branded default. Must be
+		 * 1200x630: LinkedIn only uses its large card for images of at least
+		 * 1200x627, and a portrait image always gets a small thumbnail.
+		 */
 		image?: string;
 		/** True on pages that must not be indexed (thin or duplicate). */
 		noindex?: boolean;
@@ -44,6 +48,11 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={canonical} />
 	<meta property="og:image" content={ogImage} />
+	<!-- Declared so LinkedIn picks the large card on its first fetch instead of
+	     a 160px thumbnail; every preview image is 1200x630 (see `image`). -->
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:locale" content="fr_FR" />
 
 	<meta name="twitter:card" content="summary_large_image" />
