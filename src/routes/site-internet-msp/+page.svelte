@@ -60,7 +60,7 @@
 			src={accueil}
 			width="1215"
 			height="892"
-			alt="Page d'accueil du site de la MSP de Châteauneuf-de-Gadagne"
+			alt="Page d'accueil du site de la MSP de Gadagne"
 			loading="lazy"
 		/>
 		<p>

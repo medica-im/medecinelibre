@@ -87,7 +87,7 @@ export const realisations: Realisation[] = [
 	},
 	{
 		slug: 'msp-gadagne',
-		name: 'MSP de Châteauneuf-de-Gadagne',
+		name: 'MSP de Gadagne',
 		kind: 'Site internet MSP multi-sites',
 		url: 'https://sante-gadagne.fr',
 		summary:

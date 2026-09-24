@@ -29,7 +29,7 @@
 	description="Sites web et applications pour les MSP, les CPTS et les organisations professionnelles du secteur de la santé: annuaires, sites internet, outils collaboratifs. Accompagnement sur le long terme."
 />
 
-<div class="container max-w-6xl mx-auto p-4 space-y-12">
+<div class="container max-w-6xl mx-auto p-4 space-y-16 lg:space-y-24">
 	<header class="space-y-6 text-center flex flex-col items-center">
 		<figure>
 			<section class="img-bg" />
@@ -66,12 +66,14 @@
 
 	<section class="space-y-6">
 		<h2 class="h2 text-center">Ils nous font confiance</h2>
-		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">
 			{#each realisations as r}
-				<div class="card variant-ghost p-4 space-y-2">
+				<div class="card variant-ghost p-4 flex flex-col gap-2">
 					<h3 class="h4">{r.name}</h3>
 					<p class="text-sm opacity-75">{r.kind}</p>
-					<ExternalLink href={r.url} class="anchor text-sm" />
+					<div class="mt-auto pt-2">
+						<ExternalLink href={r.url} class="anchor text-sm" />
+					</div>
 				</div>
 			{/each}
 		</div>
