@@ -42,9 +42,8 @@
 		</p>
 		<p>
 			En 2022, reconnaissant notre expertise du numérique en santé et notre expérience de
-			l'interpro, une maison de santé pluriprofessionnelle multisite regroupant plus de 40
-			professionnels nous a confié la création de son site web et d'un outil de gestion des
-			ateliers d'éducation en santé, d'éducation thérapeutique et de prévention.
+			l'interpro, la MSP de Vedène, maison de santé pluriprofessionnelle multisite regroupant
+			plus de 40 professionnels, nous a confié la création de son site web.
 		</p>
 		<p>
 			En 2023, une communauté professionnelle territoriale de santé nous a choisis pour la

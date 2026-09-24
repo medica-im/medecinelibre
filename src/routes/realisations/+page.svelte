@@ -6,7 +6,7 @@
 
 <Seo
 	title="Réalisations: sites et annuaires pour CPTS et MSP"
-	description="Nos réalisations pour des CPTS et des maisons de santé: annuaires de territoire, sites web complets, outils de gestion d'ateliers. Sites en production, visitables."
+	description="Nos réalisations pour des CPTS et des maisons de santé: annuaires de territoire, annuaires d'adhérents, sites web complets. Sites en production, visitables."
 />
 
 <div class="container max-w-3xl mx-auto p-4 space-y-10">

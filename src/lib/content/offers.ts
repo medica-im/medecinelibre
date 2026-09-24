@@ -99,6 +99,6 @@ export const realisations: Realisation[] = [
 		kind: 'Site internet MSP multi-sites',
 		url: 'https://msp-vedene.fr',
 		summary:
-			"Site web et outil de gestion des ateliers d'éducation en santé et d'éducation thérapeutique pour une MSP multisite de plus de 40 professionnels."
+			"Site multi-sites d'une MSP de plus de 40 professionnels: annuaire de l'équipe, pages établissements, prévention et éducation thérapeutique."
 	}
 ];

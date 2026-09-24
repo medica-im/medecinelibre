@@ -125,11 +125,6 @@
 				</li>
 			{/each}
 		</ul>
-		<p>
-			Pour la MSP de Vedène, nous avons également créé un outil de gestion des ateliers
-			d'éducation en santé, d'éducation thérapeutique et de prévention: le site n'est pas
-			seulement une vitrine, il porte aussi vos outils de travail.
-		</p>
 	</section>
 
 	<section class="space-y-4">
