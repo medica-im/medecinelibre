@@ -41,10 +41,10 @@
 		<h2 class="h2">Une page par mission socle, une page par groupe de travail</h2>
 		<figure class="space-y-2">
 			<img
-				class="rounded-container-token w-full border border-surface-500/20"
+				class="rounded-container-token mx-auto max-w-sm w-full border border-surface-500/20"
 				src={groupe}
-				width="1280"
-				height="900"
+				width="780"
+				height="1688"
 				alt="Page du groupe de travail Santé mentale sur le site de la CPTS Lyon 3ème: annuaire et télé-expertise réservés aux membres, convention avec l'hôpital"
 				loading="lazy"
 			/>
@@ -103,8 +103,8 @@
 			<img
 				class="rounded-container-token w-full border border-surface-500/20"
 				src={accueil}
-				width="1280"
-				height="900"
+				width="1600"
+				height="1000"
 				alt="Page d'accueil du site de la CPTS Lyon 3ème: membres de la communauté par profession et accès à l'annuaire"
 				loading="lazy"
 			/>
