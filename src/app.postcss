@@ -39,8 +39,12 @@ body {
 	line-height: 1.65;
 }
 
-/* Long-form paragraphs get a comfortable measure. Wider than this and the eye
-   loses the line start on a large monitor. */
+/* Long-form paragraphs get a comfortable measure: wider than this and the eye
+   loses the line start on a large monitor. margin-inline:auto is required, not
+   cosmetic — a max-width with no margin pins the box hard left, so a centred
+   paragraph ends up centred *inside a left-aligned box* and reads off-centre
+   on a wide screen. */
 .container p {
 	max-width: 68ch;
+	margin-inline: auto;
 }
