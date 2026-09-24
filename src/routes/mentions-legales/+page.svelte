@@ -48,7 +48,7 @@
 		<div class="flex gap-3">
 			<div class="badge variant-filled-primary w-6"><Fa icon={faPhone} /></div>
 
-			<div>09 77 21 54 35</div>
+			<div><a class="anchor" href="tel:+33356894550">03 56 89 45 50</a></div>
 		</div>
 		<div class="flex gap-3">
 			<div class="badge variant-filled-primary w-6"><Fa icon={faEnvelope} /></div>
@@ -82,12 +82,14 @@
 				<p class="font-bold mb-1">Hébergeur</p>
 				<p>DigitalOcean, LLC</p>
 				<p>
-					101 Avenue of the Americas<br />
-					10th Floor<br />
-					New York<br />
-					NY 10013<br />
-					United States of America<br />
-					+1 234-567-89
+					105 Edgeview Drive, Suite 425<br />
+					Broomfield, CO 80021<br />
+					United States of America
+				</p>
+				<p>
+					<a class="anchor" href="https://www.digitalocean.com/company/contact"
+						>www.digitalocean.com/company/contact</a
+					>
 				</p>
 			</div>
 		</div>
