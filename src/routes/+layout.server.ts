@@ -4,7 +4,7 @@ const VERCEL_ENV = ""
 import skeleton from '$lib/themes/theme-skeleton.css?inline';
 //import crimson from '@skeletonlabs/skeleton/dist/themes/theme-crimson.css?inline';
 
-export const load: LayoutServerLoad = async ({ cookies }) => {
+export const load: LayoutServerLoad = async ({ cookies, locals }) => {
 	let theme = cookies.get('theme');
 	// If no theme, set theme to skeleton
 	if (!theme) {
@@ -20,5 +20,9 @@ export const load: LayoutServerLoad = async ({ cookies }) => {
         { query: 'inline', eager: true },
     );*/
 	//return { currentTheme: files[`/src/lib/themes/theme-${theme}.css`], vercelEnv: VERCEL_ENV };
-	return { currentTheme: modules[`/node_modules/@skeletonlabs/skeleton/dist/themes/theme-${theme}.css`], vercelEnv: VERCEL_ENV };
+	return {
+		currentTheme: modules[`/node_modules/@skeletonlabs/skeleton/dist/themes/theme-${theme}.css`],
+		vercelEnv: VERCEL_ENV,
+		linkedinBot: locals.linkedinBot
+	};
 };

@@ -26,8 +26,14 @@
 	let { title, description, image = '', noindex = false }: Props = $props();
 
 	const canonical = $derived(new URL(page.url.pathname, PUBLIC_SITE_URL).href);
+	// LinkedIn only ever shows a ~160px thumbnail for organic link posts, where
+	// a screenshot or tagline is unreadable, so it gets the logo-and-name image
+	// on every page. See hooks.server.ts.
 	const ogImage = $derived(
-		new URL(image || '/images/og-default.jpg', PUBLIC_SITE_URL).href
+		new URL(
+			page.data.linkedinBot ? '/images/og-linkedin.jpg' : image || '/images/og-default.jpg',
+			PUBLIC_SITE_URL
+		).href
 	);
 	// The tab shows the page's own name; the brand is appended once. The old
 	// pages appended an undefined VITE_SITE_TITLE, rendering a bare "- ".

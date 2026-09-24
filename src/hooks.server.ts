@@ -17,5 +17,16 @@ export const handle: Handle = async ({ event, resolve }) => {
 	if (target) {
 		redirect(301, target);
 	}
-	return resolve(event);
+
+	// LinkedIn shows organic link posts as a ~160px thumbnail, so it gets a
+	// logo-and-name preview image readable at that size (see Seo.svelte and
+	// scripts/og-image.sh). Every other client gets the detailed one.
+	event.locals.linkedinBot = /LinkedInBot/i.test(event.request.headers.get('user-agent') ?? '');
+
+	const response = await resolve(event);
+	// The HTML differs by User-Agent (og:image), so say so to any cache.
+	if (response.headers.get('content-type')?.startsWith('text/html')) {
+		response.headers.append('vary', 'User-Agent');
+	}
+	return response;
 };
