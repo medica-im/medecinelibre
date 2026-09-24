@@ -81,7 +81,7 @@
 					>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-pinguet-177454b0/"
+					<a href="https://www.linkedin.com/in/jerome-pinguet/"
 						><span class="badge variant-filled-primary"><Fa icon={faLinkedin} /></span>
 
 						<span class="flex flex-wrap whitespace-normal text-left"

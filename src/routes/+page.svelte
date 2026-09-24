@@ -24,8 +24,7 @@
 	 * Organization structured data, on the homepage only, as Google recommends.
 	 * Every value is one the site already publishes: phone from /contact,
 	 * address from /mentions-legales, founding year and founder from
-	 * /a-propos. LinkedIn is left out of sameAs until we know which of the two
-	 * profile URLs used across the site is the right one.
+	 * /a-propos.
 	 */
 	const organization = JSON.stringify({
 		'@context': 'https://schema.org',
@@ -46,6 +45,7 @@
 			addressCountry: 'FR'
 		},
 		sameAs: [
+			'https://www.linkedin.com/in/jerome-pinguet/',
 			'https://bsky.app/profile/medecinelibre.bsky.social',
 			'https://mastodon.medica.im/@medecinelibre',
 			'https://twitter.com/MedecineLibre',

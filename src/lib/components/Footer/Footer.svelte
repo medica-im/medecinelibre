@@ -152,7 +152,7 @@
 				</a>
 				<a
 					class="btn variant-soft"
-					href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-pinguet-177454b0/"
+					href="https://www.linkedin.com/in/jerome-pinguet/"
 					target="_blank"
 					rel="noreferrer"
 				>
