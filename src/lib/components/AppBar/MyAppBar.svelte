@@ -108,16 +108,16 @@
 <!-- NOTE: using stopPropagation to override Chrome for Windows search shortcut -->
 <svelte:window on:keydown|stopPropagation={onWindowKeydown} />
 
-<AppBar shadow="shadow-xl">
+<AppBar shadow="shadow-xl" gap="gap-2 md:gap-4" slotTrail="max-md:!space-x-1">
 	<svelte:fragment slot="lead">
-		<div class="flex items-center space-x-4">
+		<div class="flex items-center space-x-2 md:space-x-4">
 			<!-- Hamburger Menu -->
 			<button on:click={drawerOpen} class="btn-icon btn-icon-sm lg:!hidden">
 				<Fa icon={faBars} />
 			</button>
 			<!-- Logo -->
 			<a class="" href="/" title="Aller à l'accueil">
-				<span><h3>Médecine Libre</h3></span>
+				<span><h3 class="whitespace-nowrap">Médecine Libre</h3></span>
 			</a>
 		</div>
 	</svelte:fragment>
@@ -222,7 +222,7 @@
 		<!-- Theme -->
 		<div>
 			<button
-				class="btn hover:variant-soft-primary"
+				class="btn max-md:px-2 hover:variant-soft-primary"
 				use:popup={{ event: 'click', target: 'theme' }}
 			>
 				<div class="text-lg md:!hidden">
@@ -291,7 +291,7 @@
 		<!-- Search -->
 		<div class="md:inline md:ml-4">
 			<button
-				class="btn p-2 px-4 space-x-4 variant-soft hover:variant-soft-primary"
+				class="btn p-2 px-3 md:px-4 space-x-4 variant-soft hover:variant-soft-primary"
 				on:click={triggerSearch}
 			>
 				<Fa icon={faMagnifyingGlass} />
