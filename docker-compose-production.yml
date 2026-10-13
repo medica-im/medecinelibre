@@ -5,7 +5,10 @@ services:
       - .env
     image: "${DOCKER_IMAGE_NAME}"
     ports:
-      - "${NODE_PORT_EXTERNAL_PRODUCTION}:3000"
+      # Loopback only: nginx proxies to 127.0.0.1. Docker publishes ports with
+      # NAT rules that bypass UFW, so a bare "PORT:3000" is open to the internet
+      # whatever the firewall says.
+      - "127.0.0.1:${NODE_PORT_EXTERNAL_PRODUCTION}:3000"
     environment:
       NODE_ENV: production
       ORIGIN: ${ORIGIN}

@@ -71,10 +71,22 @@ fi
 
 step "[$NAME] $TAG -> $HOST:$DIR ($COMPOSE_FILE)"
 
+[[ -f "$REPO_ROOT/$COMPOSE_FILE" ]] || die "$COMPOSE_FILE not found in the repo"
+
 if [[ $DRY_RUN -eq 1 ]]; then
+    info "(dry run) copy $COMPOSE_FILE to $HOST:$DIR (previous kept as .prev)"
     info "(dry run) ssh $HOST: cd $DIR && docker compose -f $COMPOSE_FILE pull && up -d"
     exit 0
 fi
+
+# The repo's compose file is the source of truth, so it is copied up on every
+# deploy. Before this, each host ran whatever copy sat in its deploy dir: on
+# production a leftover from an old git clone, which lacked the healthcheck
+# and published the node port on all interfaces. The previous copy is kept
+# as .prev for comparison.
+info "syncing $COMPOSE_FILE"
+ssh "$HOST" "cd '$DIR' && { [ ! -f '$COMPOSE_FILE' ] || cp -p '$COMPOSE_FILE' '$COMPOSE_FILE.prev'; } && cat > '$COMPOSE_FILE'" \
+    < "$REPO_ROOT/$COMPOSE_FILE"
 
 ssh "$HOST" bash -s <<EOF
 set -euo pipefail
